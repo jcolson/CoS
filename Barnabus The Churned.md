@@ -6,7 +6,7 @@ tags:
 updated: "2022-01-15T15:32:22+00:00"
 ---
 
-location:: [The Old Scar](The%20Old%20Scar.md)
+location:: [The Old Scar](The%20Old%20Scar.md)  
 race:: Bony Figure
 
 # Barnabus The Churned

@@ -6,11 +6,11 @@ tags:
   - dh-character
 ---
 
-player:: [Jay Colson](../../People/Jay%20Colson.md)
-class:: [Warlock](Warlock.md)
-race:: Drow Half-Elf
-background:: Guild Artisan
-patron:: [The Forger](The%20Forger.md)
+player:: [Jay Colson](../../People/Jay%20Colson.md)  
+class:: [Warlock](Warlock.md)  
+race:: Drow Half-Elf  
+background:: Guild Artisan  
+patron:: [The Forger](The%20Forger.md)  
 faction:: [Bloodbear Clan](Bloodbear%20Clan.md)
 
 # Vormorn
@@ -25,7 +25,7 @@ After one nightmare - get strange conversation with smithy, skin made of shiny b
 
 ## Influence
 
-positive with [The Circle](The%20Circle.md)
+positive with [The Circle](The%20Circle.md)  
 positive with [Gatekeepers](Gatekeepers.md)
 
 ## Images and Tokens

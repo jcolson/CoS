@@ -6,7 +6,7 @@ tags:
 updated: "2022-01-01T11:19:51+00:00"
 ---
 
-player:: [Ivan](../../People/Ivan.md)
+player:: [Ivan](../../People/Ivan.md)  
 class:: DM
 
 # DH DM

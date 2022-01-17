@@ -6,9 +6,9 @@ tags:
   - dh-character
 ---
 
-player:: [Adam Santana](../../People/Adam%20Santana.md)
-class:: Druid
-race:: Hill Dwarf
+player:: [Adam Santana](../../People/Adam%20Santana.md)  
+class:: Druid  
+race:: Hill Dwarf  
 faction:: [The Circle](The%20Circle.md)
 
 [DNDBeyond link](https://www.dndbeyond.com/characters/51342686)

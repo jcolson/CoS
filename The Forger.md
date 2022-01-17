@@ -6,8 +6,8 @@ tags:
   - dh-npc
 ---
 
-location:: 
-race:: from [Moradin](Moradin.md)
+location::   
+race:: from [Moradin](Moradin.md)  
 class:: Diety
 
 # The Forger
@@ -16,7 +16,7 @@ class:: Diety
 
 ---
 
-**Offers:**
+**Offers:**  
 Knowledge  
 Magical assistance  
 Power

@@ -28,7 +28,7 @@ No multi-classing.
 
 No feats ([DH DM](DH%20DM.md) will make custom feat with ability score built in).
 
-**Initiative**
+**Initiative**  
 11 or 1 --- one monster gets 11 ... if we roll above we come before, below after
 
 1 is used for minions
@@ -71,6 +71,6 @@ World burned two human generations ago.
 
 ![](../../media/D_D-DragonHeart-Dec-15,-2021-18-31-57-GMT-image3.jpeg)
 
-Gold is extremely rare
-General coin is silver
+Gold is extremely rare  
+General coin is silver  
 100gp will buy a farm

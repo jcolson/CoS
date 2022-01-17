@@ -6,7 +6,7 @@ tags:
 updated: "2022-01-01T13:11:46+00:00"
 ---
 
-race:: Dwarf
+race:: Dwarf  
 class:: Greater Diety
 
 # Moradin

@@ -6,9 +6,9 @@ tags:
   - dh-character
 ---
 
-player:: [TheOGBlackDynamite](../../People/TheOGBlackDynamite.md)
-class:: Strider
-race:: Half-Elf
+player:: [TheOGBlackDynamite](../../People/TheOGBlackDynamite.md)  
+class:: Strider  
+race:: Half-Elf  
 faction:: [The Circle](The%20Circle.md)
 
 # Quinn

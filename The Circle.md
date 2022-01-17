@@ -6,7 +6,7 @@ tags:
   - dh-npc
 ---
 
-race:: faction
+race:: faction  
 location:: [Hannat](Hannat.md)
 
 # The Circle
