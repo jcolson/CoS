@@ -11,7 +11,7 @@ updated: "2022-01-17T10:49:11+00:00"
 
 [DH NPCs](DH%20NPCs.md)  
 Primary Location: [Hannat](Hannat.md)  
-[Snack Master](Snack%20Master.md)
+[Snack Master](Snack Master.md)
 
 # Characters
 
