@@ -1,4 +1,4 @@
 name: Dragon Hearts Campaign
 url: "https://www.karma.net/DragonHearts"
-markdown: GFM
+markdown: kramdown
 highlighter: rouge
