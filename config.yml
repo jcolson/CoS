@@ -7,7 +7,7 @@ obsidian_folder_path_str: '/Users/jcolson/Google Drive/Obsidian/Jay''s Notebook'
 # should be in obsidian_folder_path_str
 # Can be absent when toggles/compile_md == False
 # On linux, use fullpath instead of ~/
-obsidian_entrypoint_path_str: '/Users/jcolson/Google Drive/Obsidian/Jay''s Notebook/Entrypoint.md'
+obsidian_entrypoint_path_str: '/Users/jcolson/Google Drive/Obsidian/Jay''s Notebook/DH Entrypoint.md'
 
 # Input and output path of markdown files
 # This can be an absolute or a relative path (relative to the working directory when calling obsidianhtml)
