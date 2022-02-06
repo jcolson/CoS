@@ -47,6 +47,7 @@ exclude_subfolders:
   - ".obsidian-mobile"
   - ".trash"
   - ".DS_Store"
+  - "People"
 
 toggles:
   # Opt-in/-out of Obsidian->Md conversion, set to False when using proper markdown as input
