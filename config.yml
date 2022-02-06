@@ -31,8 +31,8 @@ site_name: 'Dragon Hearts'
 
 # Use when deploying to https://mydomain.com/html_prefix/ instead of https://mydomain.com/
 # use '/html_prefix' (prepend slash, no slash at the end)
-# html_url_prefix: '/DragonHearts/output/html'
-html_url_prefix: '/output/html'
+html_url_prefix: '/DragonHearts/output/html'
+# html_url_prefix: '/output/html'
 # html_url_prefix: '/Users/jcolson/src/personal/DragonHearts/output/html'
 
 # Provide the fullpath to a template file to use instead of standard template. 

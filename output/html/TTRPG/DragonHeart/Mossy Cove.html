@@ -12,10 +12,10 @@
                 <title>Dragon Hearts</title>
 
                 <!-- Includes -->
-                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.css" />
-                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/main.css" />
-                <script src="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.css" />
+                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.css" />
+                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/main.css" />
+                <script src="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.min.js"></script> 
+                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.css" />
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 
@@ -30,10 +30,10 @@
 
 <body onload="LoadPage();">
 <div id="header" class="header">
-        <a href="/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
+        <a href="/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
 
         <div style="width:1.6rem; height:1.6rem; position:fixed; left:calc(100vw - 2rem);top: 0.9rem;">
-                <a href="/output/html/tags" title="Open tag view">
+                <a href="/DragonHearts/output/html/tags" title="Open tag view">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <path d="M0,0v512h512V0H0z M462.452,462.452H49.548V49.548h412.903V462.452z" fill="#f0f0f0"></path>
                                 <path d="M371.613,231.226v-49.548h-41.29v-41.29h-49.548v41.29h-49.548v-41.29h-49.548v41.29h-41.29v49.548h41.29v49.548h-41.29
@@ -46,9 +46,9 @@
 <div class="container-wrapper">
         <div class="container">
         <h1 id="mossy-cove">Mossy Cove</h1>
-<p>where the missing Shaman (<a href="/output/html/TTRPG/DragonHeart/Zigmond.html">Zigmond</a>) is supposed to live</p>
-<svg class="graph_svg" id="Abafb383810f74e21b483e51d6c6eb144{level}" width="680" height="400"></svg>
-<button class="graph_button" id="Bbafb383810f74e21b483e51d6c6eb144{level}" level="{level}" onclick="run('bafb383810f74e21b483e51d6c6eb144'+this.level, 'Mossy Cove');">Show Graph</button>
+<p>where the missing Shaman (<a href="/DragonHearts/output/html/TTRPG/DragonHeart/Zigmond.html">Zigmond</a>) is supposed to live</p>
+<svg class="graph_svg" id="A2c38f1f3fedc4382a4995a37c5ad0fed{level}" width="680" height="400"></svg>
+<button class="graph_button" id="B2c38f1f3fedc4382a4995a37c5ad0fed{level}" level="{level}" onclick="run('2c38f1f3fedc4382a4995a37c5ad0fed'+this.level, 'Mossy Cove');">Show Graph</button>
 <script>
 function run(uid, pinnedNode){
     // Get elements
@@ -89,7 +89,7 @@ function run(uid, pinnedNode){
             .force("charge", d3.forceManyBody().strength(-200))
             .force("center", d3.forceCenter(width / 2, height / 2))
 
-        d3.json("/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.json", function(error, graph) {
+        d3.json("/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.json", function(error, graph) {
                 if (error) throw error;
 
 
