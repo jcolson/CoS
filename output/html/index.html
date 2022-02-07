@@ -12,10 +12,10 @@
                 <title>Dragon Hearts</title>
 
                 <!-- Includes -->
-                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.css" />
-                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/main.css" />
-                <script src="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.css" />
+                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.css" />
+                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/main.css" />
+                <script src="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.min.js"></script> 
+                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.css" />
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 
@@ -30,10 +30,10 @@
 
 <body onload="LoadPage();">
 <div id="header" class="header">
-        <a href="/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
+        <a href="/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
 
         <div style="width:1.6rem; height:1.6rem; position:fixed; left:calc(100vw - 2rem);top: 0.9rem;">
-                <a href="/DragonHearts/output/html/tags" title="Open tag view">
+                <a href="/output/html/tags" title="Open tag view">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <path d="M0,0v512h512V0H0z M462.452,462.452H49.548V49.548h412.903V462.452z" fill="#f0f0f0"></path>
                                 <path d="M371.613,231.226v-49.548h-41.29v-41.29h-49.548v41.29h-49.548v-41.29h-49.548v41.29h-41.29v49.548h41.29v49.548h-41.29
@@ -45,24 +45,16 @@
 </div>
 <div class="container-wrapper">
         <div class="container">
-        <p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Session - Jan 24, 2022.html">Session - Jan 24, 2022</a>   </p>
-<p>Session - Jan 24, 2022   </p>
-<p>2022/01/24 16:07   </p>
-<p>2022/01/25 11:02   </p>
-<p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 15, 2022 Downtime Session.html">Jan 15, 2022 Downtime Session</a>   </p>
-<p>Jan 15, 2022 Downtime Session   </p>
-<p>2022/01/15 13:17   </p>
-<p>2022/01/24 16:12   </p>
-<p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 12, 2022 Session 1.html">Jan 12, 2022 Session 1</a>   </p>
-<p>Jan 12, 2022 Session 1   </p>
-<p>2022/01/12 17:56   </p>
-<p>2022/01/15 15:27   </p>
-<p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Dec-15,-2021-18-31-57-GMT Session.html">Dec-15,-2021-18-31-57-GMT Session</a>   </p>
-<p>2021-12-21 11:23 GMT Session   </p>
-<p>2021/12/15 18:31   </p>
-<p>2022/01/12 18:13</p>
-<svg class="graph_svg" id="A2ba407cc30bc42e9afd91f7fdf863093{level}" width="680" height="400"></svg>
-<button class="graph_button" id="B2ba407cc30bc42e9afd91f7fdf863093{level}" level="{level}" onclick="run('2ba407cc30bc42e9afd91f7fdf863093'+this.level, 'index');">Show Graph</button>
+        <h1 id="notes">Notes</h1>
+<h2 id="dh-session">dh-session</h2>
+<ul>
+<li><a href="/output/html/TTRPG/DragonHeart/Dec-15,-2021-18-31-57-GMT Session.html">Dec-15,-2021-18-31-57-GMT Session</a></li>
+<li><a href="/output/html/TTRPG/DragonHeart/Jan 12, 2022 Session 1.html">Jan 12, 2022 Session 1</a></li>
+<li><a href="/output/html/TTRPG/DragonHeart/Jan 15, 2022 Downtime Session.html">Jan 15, 2022 Downtime Session</a></li>
+<li><a href="/output/html/TTRPG/DragonHeart/Session - Jan 24, 2022.html">Session - Jan 24, 2022</a></li>
+</ul>
+<svg class="graph_svg" id="Aec53dd4317794cc1b5d6e763939a20d5{level}" width="680" height="400"></svg>
+<button class="graph_button" id="Bec53dd4317794cc1b5d6e763939a20d5{level}" level="{level}" onclick="run('ec53dd4317794cc1b5d6e763939a20d5'+this.level, 'index');">Show Graph</button>
 <script>
 function run(uid, pinnedNode){
     // Get elements
@@ -103,7 +95,7 @@ function run(uid, pinnedNode){
             .force("charge", d3.forceManyBody().strength(-200))
             .force("center", d3.forceCenter(width / 2, height / 2))
 
-        d3.json("/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.json", function(error, graph) {
+        d3.json("/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.json", function(error, graph) {
                 if (error) throw error;
 
 

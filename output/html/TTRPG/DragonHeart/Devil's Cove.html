@@ -12,10 +12,10 @@
                 <title>Dragon Hearts</title>
 
                 <!-- Includes -->
-                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.css" />
-                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/main.css" />
-                <script src="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.css" />
+                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.css" />
+                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/main.css" />
+                <script src="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.min.js"></script> 
+                <link rel="stylesheet" href="/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.css" />
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 
@@ -30,10 +30,10 @@
 
 <body onload="LoadPage();">
 <div id="header" class="header">
-        <a href="/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
+        <a href="/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
 
         <div style="width:1.6rem; height:1.6rem; position:fixed; left:calc(100vw - 2rem);top: 0.9rem;">
-                <a href="/DragonHearts/output/html/tags" title="Open tag view">
+                <a href="/output/html/tags" title="Open tag view">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <path d="M0,0v512h512V0H0z M462.452,462.452H49.548V49.548h412.903V462.452z" fill="#f0f0f0"></path>
                                 <path d="M371.613,231.226v-49.548h-41.29v-41.29h-49.548v41.29h-49.548v-41.29h-49.548v41.29h-41.29v49.548h41.29v49.548h-41.29
@@ -50,8 +50,8 @@
 <span class="k">Then</span>, <span class="nv">you</span> <span class="nv">see</span> <span class="nv">strange</span>, <span class="nv">clay</span><span class="o">-</span><span class="nv">painted</span> <span class="nv">small</span> <span class="nv">lizards</span>, <span class="nv">terrorizing</span> <span class="nv">prisoners</span> <span class="nv">in</span> <span class="nv">huge</span> <span class="nv">cages</span> <span class="nv">made</span> <span class="nv">of</span> <span class="nv">bone</span>.  
 <span class="k">Then</span>, <span class="nv">you</span> <span class="nv">see</span> <span class="nv">a</span> <span class="nv">town</span><span class="s1">&#39;</span><span class="s">s sign: [[Devil</span><span class="s1">&#39;</span><span class="nv">s</span> <span class="nv">Cove</span>]]. <span class="nv">Pop</span>.: <span class="mi">93</span> <span class="o">-</span> <span class="nv">you</span><span class="s1">&#39;</span><span class="s">ve never heard of the place before. There</span><span class="s1">&#39;</span><span class="nv">s</span> <span class="nv">a</span> <span class="nv">big</span>, <span class="nv">dead</span><span class="o">-</span><span class="nv">looking</span> <span class="nv">black</span> <span class="nv">tree</span> <span class="nv">at</span> <span class="nv">the</span> <span class="nv">entrance</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">town</span>
 </code></pre></div>
-<svg class="graph_svg" id="A248c0611fe554ffd9c0c9c2b04aceb48{level}" width="680" height="400"></svg>
-<button class="graph_button" id="B248c0611fe554ffd9c0c9c2b04aceb48{level}" level="{level}" onclick="run('248c0611fe554ffd9c0c9c2b04aceb48'+this.level, 'Devil's Cove');">Show Graph</button>
+<svg class="graph_svg" id="Afa4201549db84645bfe23759b289908f{level}" width="680" height="400"></svg>
+<button class="graph_button" id="Bfa4201549db84645bfe23759b289908f{level}" level="{level}" onclick="run('fa4201549db84645bfe23759b289908f'+this.level, 'Devil's Cove');">Show Graph</button>
 <script>
 function run(uid, pinnedNode){
     // Get elements
@@ -92,7 +92,7 @@ function run(uid, pinnedNode){
             .force("charge", d3.forceManyBody().strength(-200))
             .force("center", d3.forceCenter(width / 2, height / 2))
 
-        d3.json("/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.json", function(error, graph) {
+        d3.json("/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.json", function(error, graph) {
                 if (error) throw error;
 
 
