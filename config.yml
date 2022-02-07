@@ -94,4 +94,5 @@ toggles:
         - dh-session
         - dh-character
         - dh-npc
+        - dh-location
 
