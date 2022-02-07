@@ -90,6 +90,7 @@ toggles:
       add_links_in_graph_tree: True # The index.md will be created, and thus will be without links, this setting will create links to the notes that are matched.    
       enabled: True
       tags:
+        - snack-master
         - dh-session
         - dh-character
         - dh-npc
