@@ -91,4 +91,6 @@ toggles:
       enabled: True
       tags:
         - dh-session
+        - dh-character
+        - dh-npc
 
