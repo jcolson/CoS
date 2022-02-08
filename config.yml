@@ -95,4 +95,4 @@ toggles:
         - dh-character
         - dh-npc
         - dh-location
-
+        - dh-item
