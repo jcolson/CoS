@@ -87,7 +87,7 @@ toggles:
   external_blank: True
 
   features:
-    graph_view:
+    graph:
       enabled: True           # Include code to build the graph view per page (default: True)
       coalesce_force: '-200'
     # Create an index.md with links to notes that have one of the given tags.
@@ -106,6 +106,3 @@ toggles:
         - dh-item
     backlinks:
       enabled: True
-    graph:
-      enabled: True
-      coalesce_force: '-200'
