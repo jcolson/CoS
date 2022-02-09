@@ -12,11 +12,11 @@
                 <title>Dragon Hearts</title>
 
                 <!-- Includes -->
-                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.css" />
-                <link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/main.css" />
-                <script src="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.min.js"></script> 
+                <link rel="stylesheet" href="/Users/jcolson/src/personal/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.css" />
+                <link rel="stylesheet" href="/Users/jcolson/src/personal/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/main.css" />
+                <script src="/Users/jcolson/src/personal/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/mermaid.min.js"></script> 
                 <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
-<link rel="stylesheet" href="/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.css" />
+<link rel="stylesheet" href="/Users/jcolson/src/personal/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.css" />
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 
@@ -31,10 +31,10 @@
 
 <body onload="LoadPage();">
 <div id="header" class="header">
-        <a href="/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
+        <a href="/Users/jcolson/src/personal/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
 
         <div style="width:1.6rem; height:1.6rem; position:fixed; left:calc(100vw - 2rem);top: 0.9rem;">
-                <a href="/DragonHearts/output/html/tags" title="Open tag view">
+                <a href="/Users/jcolson/src/personal/DragonHearts/output/html/tags" title="Open tag view">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <path d="M0,0v512h512V0H0z M462.452,462.452H49.548V49.548h412.903V462.452z" fill="#f0f0f0"></path>
                                 <path d="M371.613,231.226v-49.548h-41.29v-41.29h-49.548v41.29h-49.548v-41.29h-49.548v41.29h-41.29v49.548h41.29v49.548h-41.29
@@ -57,9 +57,15 @@ If no pub any structure which looks central or unique to the rest?   <br />
 How many structures can we see?   </p>
 <p>About a dozen, in relatively good condition. All made of wood. Nothing unique about any of them yet   <br />
 Everything seems to be made of the same lumber though   <br />
-The road is pressed dirt</p>
-<svg class="graph_svg" id="A166795232796232948146104268321642073606{level}" width="680" height="400"></svg>
-<button class="graph_button" id="B166795232796232948146104268321642073606{level}" level="{level}" onclick="run('166795232796232948146104268321642073606'+this.level, 'Devil's Cove');">Show Graph</button>
+The road is pressed dirt</p><h2>Backlinks</h2>
+<ul>
+	<li><a href="/Users/jcolson/src/personal/DragonHearts/output/html/index.html">index</a></li>
+	<li><a href="/Users/jcolson/src/personal/DragonHearts/output/html/TTRPG/DragonHeart/Jan 15, 2022 - Downtime Session 1.1.html">Jan 15, 2022 - Downtime Session 1.1</a></li>
+	<li><a href="/Users/jcolson/src/personal/DragonHearts/output/html/TTRPG/DragonHeart/Jan 24, 2022 - Session 2.html">Jan 24, 2022 - Session 2</a></li>
+	<li><a href="/Users/jcolson/src/personal/DragonHearts/output/html/TTRPG/DragonHeart/Feb 7, 2022 - Downtime Session 2.1.html">Feb 7, 2022 - Downtime Session 2.1</a></li>
+</ul>
+<svg class="graph_svg" id="A274735153227554367122566912233649815580{level}" width="680" height="400"></svg>
+<button class="graph_button" id="B274735153227554367122566912233649815580{level}" level="{level}" onclick="run('274735153227554367122566912233649815580'+this.level, 'Devil's Cove');">Show Graph</button>
 <script>
 function run(uid, pinnedNode){
     // Get elements
@@ -100,7 +106,7 @@ function run(uid, pinnedNode){
             .force("charge", d3.forceManyBody().strength(-200))
             .force("center", d3.forceCenter(width / 2, height / 2))
 
-        d3.json("/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.json", function(error, graph) {
+        d3.json("/Users/jcolson/src/personal/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/graph.json", function(error, graph) {
                 if (error) throw error;
 
 
