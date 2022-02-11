@@ -56,7 +56,7 @@
 	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 12, 2022 - Session 1.html">Jan 12, 2022 - Session 1</a></li>
 </ul>
 <div class="graph">
-    <svg class="graph_svg" id="A186157627662826700994241391202693724188{level}" width="680" height="400"></svg>
+    <svg class="graph_svg" id="A186157627662826700994241391202693724188{level}"></svg>
     <button class="graph_button" id="B186157627662826700994241391202693724188{level}" level="{level}" onclick="run('186157627662826700994241391202693724188'+this.level, 'Green Staff');">Show Graph</button>
 </div>
 <script>
@@ -84,13 +84,15 @@ function run(uid, pinnedNode){
         }
         
     }
-
     // run d3 graph
 
     if (turn_on){
+        let positionInfo = _svg.getBoundingClientRect();
         var svg = d3.select("#A" + uid),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +positionInfo.width,
+            height = +positionInfo.height;
+        console.log ('width: '+width);
+        console.log ('height: '+height);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 

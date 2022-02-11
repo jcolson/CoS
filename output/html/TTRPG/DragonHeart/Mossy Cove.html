@@ -55,7 +55,7 @@
 	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Gryph Hounds.html">Gryph Hounds</a></li>
 </ul>
 <div class="graph">
-    <svg class="graph_svg" id="A10697030076770075056490281948271033933{level}" width="680" height="400"></svg>
+    <svg class="graph_svg" id="A10697030076770075056490281948271033933{level}"></svg>
     <button class="graph_button" id="B10697030076770075056490281948271033933{level}" level="{level}" onclick="run('10697030076770075056490281948271033933'+this.level, 'Mossy Cove');">Show Graph</button>
 </div>
 <script>
@@ -83,13 +83,15 @@ function run(uid, pinnedNode){
         }
         
     }
-
     // run d3 graph
 
     if (turn_on){
+        let positionInfo = _svg.getBoundingClientRect();
         var svg = d3.select("#A" + uid),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +positionInfo.width,
+            height = +positionInfo.height;
+        console.log ('width: '+width);
+        console.log ('height: '+height);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 

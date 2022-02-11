@@ -94,7 +94,7 @@ General coin is silver <br />
 	<li><a href="/DragonHearts/output/html/index.html">index</a></li>
 </ul>
 <div class="graph">
-    <svg class="graph_svg" id="A107642611897255787690469556162706286916{level}" width="680" height="400"></svg>
+    <svg class="graph_svg" id="A107642611897255787690469556162706286916{level}"></svg>
     <button class="graph_button" id="B107642611897255787690469556162706286916{level}" level="{level}" onclick="run('107642611897255787690469556162706286916'+this.level, 'Dec 15, 2021 - Session 0');">Show Graph</button>
 </div>
 <script>
@@ -122,13 +122,15 @@ function run(uid, pinnedNode){
         }
         
     }
-
     // run d3 graph
 
     if (turn_on){
+        let positionInfo = _svg.getBoundingClientRect();
         var svg = d3.select("#A" + uid),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +positionInfo.width,
+            height = +positionInfo.height;
+        console.log ('width: '+width);
+        console.log ('height: '+height);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 

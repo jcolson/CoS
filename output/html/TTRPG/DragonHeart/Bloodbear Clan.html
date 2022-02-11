@@ -59,7 +59,7 @@ location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Hannat.html">Han
 	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Dec 15, 2021 - Session 0.html">Dec 15, 2021 - Session 0</a></li>
 </ul>
 <div class="graph">
-    <svg class="graph_svg" id="A215010939408762916624016556780326330220{level}" width="680" height="400"></svg>
+    <svg class="graph_svg" id="A215010939408762916624016556780326330220{level}"></svg>
     <button class="graph_button" id="B215010939408762916624016556780326330220{level}" level="{level}" onclick="run('215010939408762916624016556780326330220'+this.level, 'Bloodbear Clan');">Show Graph</button>
 </div>
 <script>
@@ -87,13 +87,15 @@ function run(uid, pinnedNode){
         }
         
     }
-
     // run d3 graph
 
     if (turn_on){
+        let positionInfo = _svg.getBoundingClientRect();
         var svg = d3.select("#A" + uid),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +positionInfo.width,
+            height = +positionInfo.height;
+        console.log ('width: '+width);
+        console.log ('height: '+height);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 

@@ -136,7 +136,7 @@ sun is settling - there is some lights in distance.   </p>
 	<li><a href="/DragonHearts/output/html/index.html">index</a></li>
 </ul>
 <div class="graph">
-    <svg class="graph_svg" id="A123308668339195249896178525162817068519{level}" width="680" height="400"></svg>
+    <svg class="graph_svg" id="A123308668339195249896178525162817068519{level}"></svg>
     <button class="graph_button" id="B123308668339195249896178525162817068519{level}" level="{level}" onclick="run('123308668339195249896178525162817068519'+this.level, 'Jan 24, 2022 - Session 2');">Show Graph</button>
 </div>
 <script>
@@ -164,13 +164,15 @@ function run(uid, pinnedNode){
         }
         
     }
-
     // run d3 graph
 
     if (turn_on){
+        let positionInfo = _svg.getBoundingClientRect();
         var svg = d3.select("#A" + uid),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +positionInfo.width,
+            height = +positionInfo.height;
+        console.log ('width: '+width);
+        console.log ('height: '+height);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 
