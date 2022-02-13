@@ -33,7 +33,6 @@ site_name: 'Dragon Hearts'
 # use '/html_prefix' (prepend slash, no slash at the end)
 html_url_prefix: '/DragonHearts/output/html'
 # html_url_prefix: '/output/html'
-# html_url_prefix: '/Users/jcolson/src/personal/DragonHearts/output/html'
 
 # Provide the fullpath to a template file to use instead of standard template. 
 # Note that this file must contain at least "{content}" somewhere in the page.
