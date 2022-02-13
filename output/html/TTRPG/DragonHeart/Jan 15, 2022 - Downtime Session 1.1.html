@@ -97,7 +97,7 @@
 	<li><a href="/DragonHearts/output/html/index.html">index</a></li>
 </ul>
 <div class="graph">
-    <svg class="graph_svg" id="A84282022111689609031966046242993996461{level}" width="680" height="400"></svg>
+    <svg class="graph_svg" id="A84282022111689609031966046242993996461{level}"></svg>
     <button class="graph_button" id="B84282022111689609031966046242993996461{level}" level="{level}" onclick="run('84282022111689609031966046242993996461'+this.level, 'Jan 15, 2022 - Downtime Session 1.1');">Show Graph</button>
 </div>
 <script>
@@ -125,13 +125,15 @@ function run(uid, pinnedNode){
         }
         
     }
-
     // run d3 graph
 
     if (turn_on){
+        let positionInfo = _svg.getBoundingClientRect();
         var svg = d3.select("#A" + uid),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +positionInfo.width,
+            height = +positionInfo.height;
+        console.log ('width: '+width);
+        console.log ('height: '+height);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -305,6 +307,17 @@ function run(uid, pinnedNode){
                 }
         }        
         OpenPath(1);
+
+        // Keybindings
+        // ----------------------------------------------------------------------------
+        document.addEventListener('keypress', logKey);
+
+        function logKey(e) {
+                // Move to the beginning if 1 or enter is pressed
+                if (e.key == '1'){
+                        window.scrollTo(0,0);
+                }
+        }
 
 
         // FUNCTIONS 

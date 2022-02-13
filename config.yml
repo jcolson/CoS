@@ -104,5 +104,12 @@ toggles:
         - dh-npc
         - dh-location
         - dh-item
+      sort:
+        method: 'key_value'     # <key_value, creation_time, modified_time, none>    ! created_time not available on Linux!
+        key_path: 'created'     # empty for top level, use ':' to go down multiple levels
+        value_prefix: ''        # in case of multiple values under key_path, match on this prefix, and then remove prefix
+        reverse: false          # false/true reverses output
+        none_on_bottom: true    # will put notes at the bottom that do not have the sort key, otherwise at the top
+
     backlinks:
       enabled: True

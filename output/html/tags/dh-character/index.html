@@ -48,10 +48,10 @@
         <div class="container">
         <h1 id="notes">Notes</h1>
 <ul>
+<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/DH DM.html">TTRPG/DragonHeart/DH DM</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Vormorn.html">TTRPG/DragonHeart/Vormorn</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jolo Brekk.html">TTRPG/DragonHeart/Jolo Brekk</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Quinn Lioncourt.html">TTRPG/DragonHeart/Quinn Lioncourt</a></li>
-<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/DH DM.html">TTRPG/DragonHeart/DH DM</a></li>
 </ul>
         <!-- end content -->
         </div>
@@ -91,6 +91,17 @@
                 }
         }        
         OpenPath(1);
+
+        // Keybindings
+        // ----------------------------------------------------------------------------
+        document.addEventListener('keypress', logKey);
+
+        function logKey(e) {
+                // Move to the beginning if 1 or enter is pressed
+                if (e.key == '1'){
+                        window.scrollTo(0,0);
+                }
+        }
 
 
         // FUNCTIONS 

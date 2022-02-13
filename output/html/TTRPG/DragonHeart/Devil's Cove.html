@@ -61,11 +61,11 @@ The road is pressed dirt</p><h2>Backlinks</h2>
 <ul>
 	<li><a href="/DragonHearts/output/html/index.html">index</a></li>
 	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 15, 2022 - Downtime Session 1.1.html">Jan 15, 2022 - Downtime Session 1.1</a></li>
-	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Feb 7, 2022 - Downtime Session 2.1.html">Feb 7, 2022 - Downtime Session 2.1</a></li>
 	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 24, 2022 - Session 2.html">Jan 24, 2022 - Session 2</a></li>
+	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Feb 7, 2022 - Downtime Session 2.1.html">Feb 7, 2022 - Downtime Session 2.1</a></li>
 </ul>
 <div class="graph">
-    <svg class="graph_svg" id="A274735153227554367122566912233649815580{level}" width="680" height="400"></svg>
+    <svg class="graph_svg" id="A274735153227554367122566912233649815580{level}"></svg>
     <button class="graph_button" id="B274735153227554367122566912233649815580{level}" level="{level}" onclick="run('274735153227554367122566912233649815580'+this.level, 'Devil's Cove');">Show Graph</button>
 </div>
 <script>
@@ -93,13 +93,15 @@ function run(uid, pinnedNode){
         }
         
     }
-
     // run d3 graph
 
     if (turn_on){
+        let positionInfo = _svg.getBoundingClientRect();
         var svg = d3.select("#A" + uid),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +positionInfo.width,
+            height = +positionInfo.height;
+        console.log ('width: '+width);
+        console.log ('height: '+height);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -273,6 +275,17 @@ function run(uid, pinnedNode){
                 }
         }        
         OpenPath(1);
+
+        // Keybindings
+        // ----------------------------------------------------------------------------
+        document.addEventListener('keypress', logKey);
+
+        function logKey(e) {
+                // Move to the beginning if 1 or enter is pressed
+                if (e.key == '1'){
+                        window.scrollTo(0,0);
+                }
+        }
 
 
         // FUNCTIONS 

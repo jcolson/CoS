@@ -48,21 +48,21 @@
         <div class="container">
         <h1 id="notes">Notes</h1>
 <ul>
+<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Silver Claw.html">TTRPG/DragonHeart/Silver Claw</a></li>
+<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Bloodbear Clan.html">TTRPG/DragonHeart/Bloodbear Clan</a></li>
+<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Circle.html">TTRPG/DragonHeart/The Circle</a></li>
+<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Gatekeepers.html">TTRPG/DragonHeart/Gatekeepers</a></li>
+<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Lion's Pride.html">TTRPG/DragonHeart/Lion's Pride</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Sedwig.html">TTRPG/DragonHeart/Sedwig</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Iron the Bonker.html">TTRPG/DragonHeart/Iron the Bonker</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Forger.html">TTRPG/DragonHeart/The Forger</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Moradin.html">TTRPG/DragonHeart/Moradin</a></li>
-<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Bloodbear Clan.html">TTRPG/DragonHeart/Bloodbear Clan</a></li>
-<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Circle.html">TTRPG/DragonHeart/The Circle</a></li>
-<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Gatekeepers.html">TTRPG/DragonHeart/Gatekeepers</a></li>
-<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Silver Claw.html">TTRPG/DragonHeart/Silver Claw</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Rothorn.html">TTRPG/DragonHeart/Rothorn</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Kraz Lagan the Menacing.html">TTRPG/DragonHeart/Kraz Lagan the Menacing</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Azutrix.html">TTRPG/DragonHeart/Azutrix</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Barnabus The Churned.html">TTRPG/DragonHeart/Barnabus The Churned</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Agathrax.html">TTRPG/DragonHeart/Agathrax</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Blackscar.html">TTRPG/DragonHeart/Blackscar</a></li>
-<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Lion's Pride.html">TTRPG/DragonHeart/Lion's Pride</a></li>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Zigmond.html">TTRPG/DragonHeart/Zigmond</a></li>
 </ul>
         <!-- end content -->
@@ -103,6 +103,17 @@
                 }
         }        
         OpenPath(1);
+
+        // Keybindings
+        // ----------------------------------------------------------------------------
+        document.addEventListener('keypress', logKey);
+
+        function logKey(e) {
+                // Move to the beginning if 1 or enter is pressed
+                if (e.key == '1'){
+                        window.scrollTo(0,0);
+                }
+        }
 
 
         // FUNCTIONS 

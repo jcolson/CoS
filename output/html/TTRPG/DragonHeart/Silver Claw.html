@@ -52,12 +52,12 @@ location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Hannat.html">Han
 <p><a href="/DragonHearts/output/html/TTRPG/Tyranny-of-Dragons/Bahamut (God).html">Bahamut (God)</a> - radical group of believers - 20% draconic loot has to be tithed</p><h2>Backlinks</h2>
 <ul>
 	<li><a href="/DragonHearts/output/html/index.html">index</a></li>
+	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Dec 15, 2021 - Session 0.html">Dec 15, 2021 - Session 0</a></li>
 	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Quinn Lioncourt.html">Quinn Lioncourt</a></li>
 	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 24, 2022 - Session 2.html">Jan 24, 2022 - Session 2</a></li>
-	<li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Dec 15, 2021 - Session 0.html">Dec 15, 2021 - Session 0</a></li>
 </ul>
 <div class="graph">
-    <svg class="graph_svg" id="A337291319086770471946632067040319599258{level}" width="680" height="400"></svg>
+    <svg class="graph_svg" id="A337291319086770471946632067040319599258{level}"></svg>
     <button class="graph_button" id="B337291319086770471946632067040319599258{level}" level="{level}" onclick="run('337291319086770471946632067040319599258'+this.level, 'Silver Claw');">Show Graph</button>
 </div>
 <script>
@@ -85,13 +85,15 @@ function run(uid, pinnedNode){
         }
         
     }
-
     // run d3 graph
 
     if (turn_on){
+        let positionInfo = _svg.getBoundingClientRect();
         var svg = d3.select("#A" + uid),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+            width = +positionInfo.width,
+            height = +positionInfo.height;
+        console.log ('width: '+width);
+        console.log ('height: '+height);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -265,6 +267,17 @@ function run(uid, pinnedNode){
                 }
         }        
         OpenPath(1);
+
+        // Keybindings
+        // ----------------------------------------------------------------------------
+        document.addEventListener('keypress', logKey);
+
+        function logKey(e) {
+                // Move to the beginning if 1 or enter is pressed
+                if (e.key == '1'){
+                        window.scrollTo(0,0);
+                }
+        }
 
 
         // FUNCTIONS 
