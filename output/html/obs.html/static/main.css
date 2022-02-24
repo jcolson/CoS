@@ -1,5 +1,6 @@
 * {
     overflow-anchor: none;
+    text-rendering: optimizeLegibility;
   }
   
 table {
@@ -35,9 +36,11 @@ body {
     overflow: scroll;  
     overflow-y: scroll;
     scrollbar-color: #7c7f8c #f0f0f0;
+    scroll-margin-top: 2rem;
 }
 .container img {
     max-width: 100%;
+    padding: 0.2rem;
 }
 .container-wrapper {
     max-width: calc(45rem + 3rem);
@@ -54,10 +57,21 @@ body {
     width: 2.0rem;
     height: 1.1rem;
     top: 0px;
-    right: 0.78rem;
+    right: 0.75rem;
     border-radius: 0 0 0 1rem;
     cursor: pointer;
 }
+::-webkit-scrollbar {
+    width: 0.9rem;
+    background-color: #f0f0f0; /* or add it to the track */
+  }
+::-webkit-scrollbar-thumb{
+    background-color: #7c7f8c;
+    border: 4px solid #f0f0f0;
+    border-radius: 10px;
+}
+
+
 @media (max-width: 800px) {
     .container {
         float: none;
@@ -66,7 +80,24 @@ body {
     .container:after {
         content: "\a\a\a\a\a";
         white-space: pre;
-    }    
+    }
+    .container-clickback {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'SourceCodePro-Regular';
+    src: url('/DragonHearts/output/html/obs.html/static/SourceCodePro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: monospace;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/DragonHearts/output/html/obs.html/static/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -77,6 +108,11 @@ body {
     border-bottom: 3px solid #f0f0f0;
     position:fixed;
     top:0px;
+    z-index:999;
+    background-color: white;
+}
+h1, h2, h3, h4, h5 {
+    scroll-margin-top: 4rem;
 }
 h1 {
     font-size: 28px;
@@ -173,7 +209,7 @@ a.nonexistent-link:visited {
 }
 
 .external-link::after {
-    background: transparent url(/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/external.svg) 0 0 no-repeat;
+    background: transparent url(/DragonHearts/output/html/obs.html/static/external.svg) 0 0 no-repeat;
     background-size: auto;
     background-size: 16px;
     content: "";
@@ -206,17 +242,34 @@ span.tag {
 }
 
 
-@font-face {
-    font-family: 'SourceCodePro-Regular';
-    src: url('/DragonHearts/output/html/98682199-5ac9-448c-afc8-23ab7359a91b-static/SourceCodePro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: monospace;
-}
-
 .graph_svg {
     width: 100%;
     height: 400px;
 }
+
+.dir-container {
+    padding-left:1rem;
+    display: none;
+    padding-left: 1.5rem;
+}
+.dir-button {
+    background-color: transparent;
+    border: none;
+    font-size: 12pt;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0.2rem;
+    font-family: 'Roboto-Regular';
+}
+.dir-list {
+    margin-top: 0.2rem;
+    padding-left: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.dir-list li {
+    list-style-type: none;
+}
+
 
 .codehilite { 
     background: #050b15; 
@@ -225,9 +278,9 @@ span.tag {
     color: #d7d7d7; 
     font-weight: 400; 
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    margin-right: -2rem; 
-    overflow-x: scroll;   }
+    margin-bottom: 1rem; 
+    overflow-x: auto;
+}
 
 code {font-family: 'SourceCodePro-Regular'; font-size: 10pt; font-weight: 500; background-color: aliceblue;
     color: #9c27ec;}
