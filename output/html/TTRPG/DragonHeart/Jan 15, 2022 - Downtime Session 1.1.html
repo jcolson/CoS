@@ -18,41 +18,55 @@
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
                 <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
-<script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
 
                 <!-- Onload tweaks -->
                 <script>
-                        // add prefix to hash to avoid scrolling
-                        if (window.location.hash != '' && window.location.hash.substr(1)[0] != '!'){
-                                window.location.hash = '!' + window.location.hash.substr(1);
-                        }
+                        const CURRENT_NODE = 'Jan 15, 2022 - Downtime Session 1.1';
                 </script>
         </head>
 
 <body onload="LoadPage();">
-<div id="header" class="header">
-        <a href="/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
-
-        <div style="width:6rem; height:1.6rem; position:fixed; left:calc(100vw - 6rem);top: 0.9rem; ">
-
-                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
-                        <a href="/DragonHearts/output/html/obs.html/tags/" title="Open tag view">
-                                <img src = "/DragonHearts/output/html/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
-                        </a>
-                </div>
-        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
+        <div class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/DragonHearts/output/html/index.html" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
+                                <div class="navbar-button" onclick="toggle('navbar', 'flex')">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                
+                                        <div class="icon-tray">
+                                                
+                                                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
+                                                        <a href="/DragonHearts/output/html/obs.html/tags/index.html" title="Open tag view">
+                                                                <img src = "/DragonHearts/output/html/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
+                                                        </a>
+                                                </div>
+                                                        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
             <a id="dirtree_link" class="system-link" href="/DragonHearts/output/html/obs.html/dir_index.html" title="View directory tree">
                     <img src = "/DragonHearts/output/html/obs.html/static/dirtree.svg" style="width: 14px; padding: 3px;" alt="Directory tree link"/>
             </a>
         </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/DragonHearts/output/html/obs.html/graph/index.html?node=Jan 15, 2022 - Downtime Session 1.1" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/DragonHearts/output/html/obs.html/static/graph.svg" alt="Open fullpage Graph"/>
+            </a>
         </div>
-
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                        <div class="toc">
+<ul>
+<li><a href="#jan-15-2022-downtime-session-11" class="anchor-link">Jan 15, 2022 - Downtime Session 1.1</a></li>
+</ul>
 </div>
-<div class="container-wrapper">
-        <div class="container">
-        <h1 id="jan-15-2022-downtime-session-11">Jan 15, 2022 - Downtime Session 1.1</h1>
+<h1 id="jan-15-2022-downtime-session-11">Jan 15, 2022 - Downtime Session 1.1</h1>
 <div class="codehilite"><pre><span></span><code><span class="p">[[</span><span class="n">Iron</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Bonker</span><span class="p">]],</span><span class="w"> </span><span class="n">after</span><span class="w"> </span><span class="n">headbutting</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">stomach</span><span class="p">,</span><span class="w"> </span><span class="n">pulls</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">one</span><span class="w"> </span><span class="n">hand</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">brings</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">water</span><span class="w"> </span><span class="n">barrel</span><span class="p">.</span><span class="w"> </span><span class="n">He</span><span class="w"> </span><span class="n">keeps</span><span class="w"> </span><span class="n">shouting</span><span class="w"> </span><span class="n">something</span><span class="w"> </span><span class="n">along</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">lines</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">how</span><span class="w"> </span><span class="n">you</span><span class="err">&#39;</span><span class="n">re</span><span class="w"> </span><span class="n">betraying</span><span class="w"> </span><span class="n">his</span><span class="w"> </span><span class="n">trust</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">how</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="n">hand</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">always</span><span class="w"> </span><span class="n">ready</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">pull</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">dagger</span><span class="p">.</span><span class="w"> </span><span class="p">(</span><span class="n">he</span><span class="w"> </span><span class="n">expects</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">explain</span><span class="w"> </span><span class="n">what</span><span class="w"> </span><span class="n">happened</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">past</span><span class="w"> </span><span class="n">couple</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">days</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">whether</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">something</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="p">[[</span><span class="n">Bloodbear</span><span class="w"> </span><span class="n">Clan</span><span class="p">]])</span><span class="w"></span>
 </code></pre></div>
 
@@ -98,21 +112,86 @@
 
 <p>"<a href="/DragonHearts/output/html/TTRPG/DragonHeart/Quinn Lioncourt.html">Quinn Lioncourt</a> and <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jolo Brekk.html">Jolo Brekk</a> seem like solid, reliable types ... if they are on the right track to find <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Devil's Cove.html">Devil's Cove</a>, that is perfect.  I won't upset the harmony.  I'll be in touch on my return from our next adventure."   </p>
 <div class="codehilite"><pre><span></span><code>&quot;I know, little one. I&#39;m watching&quot;
-</code></pre></div><h2>Backlinks</h2>
+</code></pre></div>
+
 <ul>
-	<li><a href="/DragonHearts/output/html/index.html">index</a></li>
+<li>[ ] find <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Agathrax.html">Agathrax</a>   </li>
+<li>[ ] find <a href="/DragonHearts/output/html/TTRPG/CandleKeep/Aetrox.html">Aetrox</a></li>
+</ul><h2>Backlinks</h2>
+<ul>
+	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 </ul>
-<div class="graph">
-    <svg class="graph_svg" id="A84282022111689609031966046242993996461{level}"></svg>
-    <button class="graph_button" id="B84282022111689609031966046242993996461{level}" level="{level}" onclick="run('84282022111689609031966046242993996461'+this.level, 'Jan 15, 2022 - Downtime Session 1.1');">Show Graph</button>
+<!-- <div class="graph">
+    <svg class="graph_svg" id="A333177649562282815430128130373628400542{level}"></svg>
+    <button class="graph_button" id="B333177649562282815430128130373628400542{level}" level="{level}" onclick="run('333177649562282815430128130373628400542'+this.level, 'Jan 15, 2022 - Downtime Session 1.1');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
-        <!-- end content -->
-        </div>
+ -->
+ <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
+
+<div class="graph">
+    <div id="A333177649562282815430128130373628400542{level}" class="graph_div"></div>
+    <button class="graph_button" id="B333177649562282815430128130373628400542{level}" level="{level}" onclick="run('333177649562282815430128130373628400542'+this.level, 'Jan 15, 2022 - Downtime Session 1.1', 'None');">Show Graph</button>
 </div>
 
 
+<script src="//unpkg.com/3d-force-graph"></script>
+<script>
+    function grapher(args) {
+        current_node_id = args.current_node_id
+        
+        let it = 0;
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl('/obs.html/data/graph.json')
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
+    }
+</script>
+
+
+                        <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
+        </div>
+
 <script src="/DragonHearts/output/html/obs.html/static/obsidian.js" type="text/javascript"></script>
+
 </body>
 </html>

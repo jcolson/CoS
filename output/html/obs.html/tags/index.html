@@ -17,42 +17,51 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
                 <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
-<link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/taglist.css" /><link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
-<link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/taglist.css" />
+
 
                 <!-- Onload tweaks -->
                 <script>
-                        // add prefix to hash to avoid scrolling
-                        if (window.location.hash != '' && window.location.hash.substr(1)[0] != '!'){
-                                window.location.hash = '!' + window.location.hash.substr(1);
-                        }
+                        const CURRENT_NODE = 'tagspage';
                 </script>
         </head>
 
 <body onload="LoadPage();">
-<div id="header" class="header">
-        <a href="/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
-
-        <div style="width:6rem; height:1.6rem; position:fixed; left:calc(100vw - 6rem);top: 0.9rem; ">
-
-                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
-                        <a href="/DragonHearts/output/html/obs.html/tags/" title="Open tag view">
-                                <img src = "/DragonHearts/output/html/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
-                        </a>
-                </div>
-        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
+        <div class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/DragonHearts/output/html/index.html" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
+                                <div class="navbar-button" onclick="toggle('navbar', 'flex')">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                
+                                        <div class="icon-tray">
+                                                
+                                                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
+                                                        <a href="/DragonHearts/output/html/obs.html/tags/index.html" title="Open tag view">
+                                                                <img src = "/DragonHearts/output/html/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
+                                                        </a>
+                                                </div>
+                                                        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
             <a id="dirtree_link" class="system-link" href="/DragonHearts/output/html/obs.html/dir_index.html" title="View directory tree">
                     <img src = "/DragonHearts/output/html/obs.html/static/dirtree.svg" style="width: 14px; padding: 3px;" alt="Directory tree link"/>
             </a>
         </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/DragonHearts/output/html/obs.html/graph/index.html?node=tagspage" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/DragonHearts/output/html/obs.html/static/graph.svg" alt="Open fullpage Graph"/>
+            </a>
         </div>
-
-</div>
-<div class="container-wrapper">
-        <div class="container">
-        <h1 id="tags">Tags</h1>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                        <h1 id="tags">Tags</h1>
 <ul>
 <li><a href="/DragonHearts/output/html/obs.html/tags/snack-master/index.html">snack-master</a></li>
 <li><a href="/DragonHearts/output/html/obs.html/tags/dh-session/index.html">dh-session</a></li>
@@ -61,12 +70,15 @@
 <li><a href="/DragonHearts/output/html/obs.html/tags/dh-npc/index.html">dh-npc</a></li>
 <li><a href="/DragonHearts/output/html/obs.html/tags/tod-npc/index.html">tod-npc</a></li>
 <li><a href="/DragonHearts/output/html/obs.html/tags/dh-item/index.html">dh-item</a></li>
+<li><a href="/DragonHearts/output/html/obs.html/tags/ck-character/index.html">ck-character</a></li>
 </ul>
-        <!-- end content -->
+                        <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
         </div>
-</div>
-
 
 <script src="/DragonHearts/output/html/obs.html/static/obsidian.js" type="text/javascript"></script>
+
 </body>
 </html>

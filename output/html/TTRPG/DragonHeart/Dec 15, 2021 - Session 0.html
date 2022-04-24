@@ -18,41 +18,62 @@
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
                 <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
-<script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
 
                 <!-- Onload tweaks -->
                 <script>
-                        // add prefix to hash to avoid scrolling
-                        if (window.location.hash != '' && window.location.hash.substr(1)[0] != '!'){
-                                window.location.hash = '!' + window.location.hash.substr(1);
-                        }
+                        const CURRENT_NODE = 'Dec 15, 2021 - Session 0';
                 </script>
         </head>
 
 <body onload="LoadPage();">
-<div id="header" class="header">
-        <a href="/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
-
-        <div style="width:6rem; height:1.6rem; position:fixed; left:calc(100vw - 6rem);top: 0.9rem; ">
-
-                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
-                        <a href="/DragonHearts/output/html/obs.html/tags/" title="Open tag view">
-                                <img src = "/DragonHearts/output/html/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
-                        </a>
-                </div>
-        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
+        <div class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/DragonHearts/output/html/index.html" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
+                                <div class="navbar-button" onclick="toggle('navbar', 'flex')">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                
+                                        <div class="icon-tray">
+                                                
+                                                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
+                                                        <a href="/DragonHearts/output/html/obs.html/tags/index.html" title="Open tag view">
+                                                                <img src = "/DragonHearts/output/html/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
+                                                        </a>
+                                                </div>
+                                                        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
             <a id="dirtree_link" class="system-link" href="/DragonHearts/output/html/obs.html/dir_index.html" title="View directory tree">
                     <img src = "/DragonHearts/output/html/obs.html/static/dirtree.svg" style="width: 14px; padding: 3px;" alt="Directory tree link"/>
             </a>
         </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/DragonHearts/output/html/obs.html/graph/index.html?node=Dec 15, 2021 - Session 0" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/DragonHearts/output/html/obs.html/static/graph.svg" alt="Open fullpage Graph"/>
+            </a>
         </div>
-
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                        <div class="toc">
+<ul>
+<li><a href="#dec-15-2021-session-0" class="anchor-link">Dec 15, 2021 - Session 0</a><ul>
+<li><a href="#session-0-stuff" class="anchor-link">Session 0 Stuff</a></li>
+<li><a href="#world-info" class="anchor-link">World info</a><ul>
+<li><a href="#factions" class="anchor-link">Factions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="container-wrapper">
-        <div class="container">
-        <h1 id="dec-15-2021-session-0">Dec 15, 2021 - Session 0</h1>
+<h1 id="dec-15-2021-session-0">Dec 15, 2021 - Session 0</h1>
 <h2 id="session-0-stuff">Session 0 Stuff</h2>
 <p>Feb 22, 2022 <a href="https://doodle.com/poll/kdk26my2i5xx2pba" target="_blank" class="external-link" target="_blank" class="external-link">Doodle</a> <br />
 Dec 15, 2021 <a href="https://doodle.com/poll/kdk26my2i5xx2pba" target="_blank" class="external-link" target="_blank" class="external-link">Doodle</a> link for figuring out schedules   </p>
@@ -98,19 +119,79 @@ Dec 15, 2021 <a href="https://doodle.com/poll/kdk26my2i5xx2pba" target="_blank" 
 General coin is silver <br />
 100gp will buy a farm</p><h2>Backlinks</h2>
 <ul>
-	<li><a href="/DragonHearts/output/html/index.html">index</a></li>
+	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 </ul>
-<div class="graph">
-    <svg class="graph_svg" id="A231210970669705183860762376786840484569{level}"></svg>
-    <button class="graph_button" id="B231210970669705183860762376786840484569{level}" level="{level}" onclick="run('231210970669705183860762376786840484569'+this.level, 'Dec 15, 2021 - Session 0');">Show Graph</button>
+<!-- <div class="graph">
+    <svg class="graph_svg" id="A73195705196029002218007731178319309442{level}"></svg>
+    <button class="graph_button" id="B73195705196029002218007731178319309442{level}" level="{level}" onclick="run('73195705196029002218007731178319309442'+this.level, 'Dec 15, 2021 - Session 0');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
-        <!-- end content -->
-        </div>
+ -->
+ <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
+
+<div class="graph">
+    <div id="A73195705196029002218007731178319309442{level}" class="graph_div"></div>
+    <button class="graph_button" id="B73195705196029002218007731178319309442{level}" level="{level}" onclick="run('73195705196029002218007731178319309442'+this.level, 'Dec 15, 2021 - Session 0', 'None');">Show Graph</button>
 </div>
 
 
+<script src="//unpkg.com/3d-force-graph"></script>
+<script>
+    function grapher(args) {
+        current_node_id = args.current_node_id
+        
+        let it = 0;
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl('/obs.html/data/graph.json')
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
+    }
+</script>
+
+
+                        <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
+        </div>
+
 <script src="/DragonHearts/output/html/obs.html/static/obsidian.js" type="text/javascript"></script>
+
 </body>
 </html>

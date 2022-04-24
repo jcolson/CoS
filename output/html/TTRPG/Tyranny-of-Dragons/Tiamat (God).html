@@ -18,59 +18,133 @@
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
                 <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
-<script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
 
                 <!-- Onload tweaks -->
                 <script>
-                        // add prefix to hash to avoid scrolling
-                        if (window.location.hash != '' && window.location.hash.substr(1)[0] != '!'){
-                                window.location.hash = '!' + window.location.hash.substr(1);
-                        }
+                        const CURRENT_NODE = 'Tiamat (God)';
                 </script>
         </head>
 
 <body onload="LoadPage();">
-<div id="header" class="header">
-        <a href="/DragonHearts/output/html/" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
-
-        <div style="width:6rem; height:1.6rem; position:fixed; left:calc(100vw - 6rem);top: 0.9rem; ">
-
-                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
-                        <a href="/DragonHearts/output/html/obs.html/tags/" title="Open tag view">
-                                <img src = "/DragonHearts/output/html/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
-                        </a>
-                </div>
-        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
+        <div class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row">
+                                <a href="/DragonHearts/output/html/index.html" id="homelink" title="Clear screen and go to homepage">Dragon Hearts</a>
+                                <div class="navbar-button" onclick="toggle('navbar', 'flex')">
+                                        ≡
+                                </div>
+                                <div id="navbar" class="navbar">
+                                
+                                        <div class="icon-tray">
+                                                
+                                                <div style="width:1.6rem; height:1.6rem; float:right; margin-right:0.2rem">
+                                                        <a href="/DragonHearts/output/html/obs.html/tags/index.html" title="Open tag view">
+                                                                <img src = "/DragonHearts/output/html/obs.html/static/hashtag.svg" alt="RSS Feed link"/>
+                                                        </a>
+                                                </div>
+                                                        <div style="width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border: 3px solid #f0f0f0; margin-right:0.2rem; float:right;">
             <a id="dirtree_link" class="system-link" href="/DragonHearts/output/html/obs.html/dir_index.html" title="View directory tree">
                     <img src = "/DragonHearts/output/html/obs.html/static/dirtree.svg" style="width: 14px; padding: 3px;" alt="Directory tree link"/>
             </a>
         </div>
+                                                        <div class="graph_header_div">
+            <a id="graph_link" class="system-link" href="/DragonHearts/output/html/obs.html/graph/index.html?node=Tiamat (God)" title="Open fullpage Graph">
+                    <img class="graph_header_div_svg" src = "/DragonHearts/output/html/obs.html/static/graph.svg" alt="Open fullpage Graph"/>
+            </a>
         </div>
-
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane"></div>
+                        <div class="container">
+                                        <div class="toc">
+<ul>
+<li><a href="#tiamat-god" class="anchor-link">Tiamat (God)</a></li>
+</ul>
 </div>
-<div class="container-wrapper">
-        <div class="container">
-        <h1 id="tiamat-god">Tiamat (God)</h1>
+<h1 id="tiamat-god">Tiamat (God)</h1>
 <p>The evil queen of dragons is a fearsome god of greed, envy, and hoarded wealth. While chromatic dragons are her foremost worshipers, Tiamat accepts the worship of any who crave wealth. All chromatic dragons have a fearful reverence for their tyrannical queen, but many dragons of near-deific power and ambition chafe under her rule.   </p>
 <p>Tiamat remains imprisoned in Avernus, the first of the Nine Hells, influencing the souls of chromatic dragons across the planes and seeking the means to free herself.   </p>
 <p><strong><em>Depiction.</em></strong> Most representations of Tiamat exist as warnings within sanctuaries of the Platinum Dragon Bahamut. She is shown as a drake of frightful size, with massive leathery wings spreading clouds of poisonous mist, while she shouts from five vicious dragon heads, each one a chromatic color of her evil children.   </p>
 <p><strong><em>Enemies.</em></strong> The Scaled Tyrant’s hatred for <a href="/DragonHearts/output/html/TTRPG/Tyranny-of-Dragons/Bahamut (God).html">Bahamut (God)</a> is as old as the Founding, and her cults are ever hunted by his justice. For centuries, the zealous paladins of Bahamut have limited her worship to the chromatic dragons, but a rise in cult activity in the underbelly of Dwendalian society has priests of the Platinum Dragon on edge.</p><h2>Backlinks</h2>
 <ul>
-	<li><a href="/DragonHearts/output/html/TTRPG/Tyranny-of-Dragons/Bahamut (God).html">Bahamut (God)</a></li>
+	<li><a class="backlink" href="/TTRPG/Tyranny-of-Dragons/Bahamut (God).html">Bahamut (God)</a></li>
 </ul>
-<div class="graph">
-    <svg class="graph_svg" id="A1295910887190148766553046850974112969{level}"></svg>
-    <button class="graph_button" id="B1295910887190148766553046850974112969{level}" level="{level}" onclick="run('1295910887190148766553046850974112969'+this.level, 'Tiamat (God)');">Show Graph</button>
+<!-- <div class="graph">
+    <svg class="graph_svg" id="A97107175804926291192718283582347423488{level}"></svg>
+    <button class="graph_button" id="B97107175804926291192718283582347423488{level}" level="{level}" onclick="run('97107175804926291192718283582347423488'+this.level, 'Tiamat (God)');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
-        <!-- end content -->
-        </div>
+ -->
+ <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
+
+<div class="graph">
+    <div id="A97107175804926291192718283582347423488{level}" class="graph_div"></div>
+    <button class="graph_button" id="B97107175804926291192718283582347423488{level}" level="{level}" onclick="run('97107175804926291192718283582347423488'+this.level, 'Tiamat (God)', '45');">Show Graph</button>
 </div>
 
 
+<script src="//unpkg.com/3d-force-graph"></script>
+<script>
+    function grapher(args) {
+        current_node_id = args.current_node_id
+        
+        let it = 0;
+        window.Graph = ForceGraph3D()
+            (args.graph_container)
+            .jsonUrl('/obs.html/data/graph.json')
+            .width(args.width)
+            .height(args.height)
+            .nodeLabel('id')
+            .linkDirectionalParticles("value")
+            .linkDirectionalParticleSpeed(0.010)
+            .linkDirectionalParticleWidth(2.0)
+            .nodeColor(node => {
+                if (node.id == current_node_id){
+                    return '#ff0000'
+                }
+                let isConnected = false;
+                node.links.forEach(link => {
+                    if (link == current_node_id){
+                        isConnected = true;
+                    }
+                })
+                if (isConnected){
+                    return '#f7be49';
+                }
+                return '#ffffff'
+            })
+            .linkColor(link => {
+                if (link.source == current_node_id || link.target == current_node_id){
+                    return '#ff0000'
+                }
+                return '#dadada'
+            })
+            .linkOpacity(0.3)
+            .onNodeClick(node => {
+                args.node = node;
+                graph_left_click(args)()
+            })
+            .onNodeRightClick(node => {
+                args.node = node;
+                graph_right_click(args)()
+            });
+    }
+</script>
+
+
+                        <!-- end content -->
+                        </div>
+                        <div id="right_pane"></div>
+                </div>
+        </div>
+
 <script src="/DragonHearts/output/html/obs.html/static/obsidian.js" type="text/javascript"></script>
+
 </body>
 </html>
