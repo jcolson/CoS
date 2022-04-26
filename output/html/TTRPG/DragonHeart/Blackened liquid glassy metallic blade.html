@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,12 +61,12 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="blackened-liquid-glassy-metallic-blade">Blackened liquid glassy metallic blade</h1>
+<div class="toc">
 <ul>
 <li><a href="#blackened-liquid-glassy-metallic-blade" class="anchor-link">Blackened liquid glassy metallic blade</a></li>
 </ul>
 </div>
-<h1 id="blackened-liquid-glassy-metallic-blade">Blackened liquid glassy metallic blade</h1>
 <p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Vormorn.html">Vormorn</a> has   </p>
 <p>material is not known to anyone here. But, during your stay you could figure out that it cannot simply be heated up, like other metals. Either it's boiling point is much higher than normal, or you'd need to do some other sort of thing to make it change shape.</p><h2>Backlinks</h2>
 <ul>
@@ -74,8 +74,8 @@
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 12, 2022 - Session 1.html">Jan 12, 2022 - Session 1</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A142927465536351404638930022470130071672{level}"></svg>
-    <button class="graph_button" id="B142927465536351404638930022470130071672{level}" level="{level}" onclick="run('142927465536351404638930022470130071672'+this.level, 'Blackened liquid glassy metallic blade');">Show Graph</button>
+    <svg class="graph_svg" id="A319248693385695879841836288989528302920{level}"></svg>
+    <button class="graph_button" id="B319248693385695879841836288989528302920{level}" level="{level}" onclick="run('319248693385695879841836288989528302920'+this.level, 'Blackened liquid glassy metallic blade');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -83,20 +83,17 @@
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A142927465536351404638930022470130071672{level}" class="graph_div"></div>
-    <button class="graph_button" id="B142927465536351404638930022470130071672{level}" level="{level}" onclick="run('142927465536351404638930022470130071672'+this.level, 'Blackened liquid glassy metallic blade', 'None');">Show Graph</button>
+    <div id="A319248693385695879841836288989528302920{level}" class="graph_div"></div>
+    <button class="graph_button" id="B319248693385695879841836288989528302920{level}" level="{level}" onclick="run('319248693385695879841836288989528302920'+this.level, 'Blackened liquid glassy metallic blade');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

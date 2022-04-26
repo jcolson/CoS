@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -69,12 +69,9 @@
         <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')
@@ -115,18 +112,21 @@
 </script>
 
         <script>
+            function graph_open_link(args){
+                return graph_open_link_normal(args)
+            }                
             function graph_left_click(args){
                     return graph_select_node(args)
             }
             function graph_right_click(args){
                     return graph_open_link(args)
             }
-            
+
             args = get_graph_args('graph_full_page');
 
             const urlParams = new URLSearchParams(window.location.search);
             const pinnedNode = urlParams.get('node');
-            console.log(pinnedNode);
+            current_node_id = pinnedNode;
             args.current_node_id = pinnedNode;
 
             grapher(args)

@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,9 +61,13 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-race:: God of Death   </p>
+                                        <p>race:: God of Death   </p>
 <h1 id="kelemvor-the-god-of-death">Kelemvor the God of Death</h1>
+<div class="toc">
+<ul>
+<li><a href="#kelemvor-the-god-of-death" class="anchor-link">Kelemvor the God of Death</a></li>
+</ul>
+</div>
 <p>encountered (<a href="/DragonHearts/output/html/TTRPG/DragonHeart/Rat People.html">Rat People</a>) in the sewers, an old Kelemvor temple, under the <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Devil's Cove.html">Devil's Cove</a>   </p>
 <p><a href="https://forgottenrealms.fandom.com/wiki/Kelemvor" target="_blank" class="external-link">Forgotten Realms link</a></p><h2>Backlinks</h2>
 <ul>
@@ -72,8 +76,8 @@ race:: God of Death   </p>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Rat People.html">Rat People</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A292968224556126273213068491817149763618{level}"></svg>
-    <button class="graph_button" id="B292968224556126273213068491817149763618{level}" level="{level}" onclick="run('292968224556126273213068491817149763618'+this.level, 'Kelemvor the God of Death');">Show Graph</button>
+    <svg class="graph_svg" id="A223947579468964251192954166343498293283{level}"></svg>
+    <button class="graph_button" id="B223947579468964251192954166343498293283{level}" level="{level}" onclick="run('223947579468964251192954166343498293283'+this.level, 'Kelemvor the God of Death');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -81,20 +85,17 @@ race:: God of Death   </p>
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A292968224556126273213068491817149763618{level}" class="graph_div"></div>
-    <button class="graph_button" id="B292968224556126273213068491817149763618{level}" level="{level}" onclick="run('292968224556126273213068491817149763618'+this.level, 'Kelemvor the God of Death', 'None');">Show Graph</button>
+    <div id="A223947579468964251192954166343498293283{level}" class="graph_div"></div>
+    <button class="graph_button" id="B223947579468964251192954166343498293283{level}" level="{level}" onclick="run('223947579468964251192954166343498293283'+this.level, 'Kelemvor the God of Death');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

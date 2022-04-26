@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -77,19 +77,16 @@ hexblade, make Charisma the highest next Constitution followed by Dexterity, the
 
 <div class="graph">
     <div id="A322535146344695215772801228979224712315{level}" class="graph_div"></div>
-    <button class="graph_button" id="B322535146344695215772801228979224712315{level}" level="{level}" onclick="run('322535146344695215772801228979224712315'+this.level, 'Warlock', '46');">Show Graph</button>
+    <button class="graph_button" id="B322535146344695215772801228979224712315{level}" level="{level}" onclick="run('322535146344695215772801228979224712315'+this.level, 'Warlock');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

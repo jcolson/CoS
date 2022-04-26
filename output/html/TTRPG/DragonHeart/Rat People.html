@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,12 +61,12 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="rat-people">Rat People</h1>
+<div class="toc">
 <ul>
 <li><a href="#rat-people" class="anchor-link">Rat People</a></li>
 </ul>
 </div>
-<h1 id="rat-people">Rat People</h1>
 <p>[2:00 PM, 2/24/2022] Ivan (🗡️): they were in an old <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Kelemvor the God of Death.html">Kelemvor the God of Death</a> ruin under <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Devil's Cove.html">Devil's Cove</a>, but you didn't see them wear any symbols. They must have only used the structure <br />
 [2:01 PM, 2/24/2022] Ivan (🗡️): the only symbol you've encountered on the way out was of a wooden carving of a wyrm <br />
 [2:01 PM, 2/24/2022] Jay Colson: ah, so we've deduced  that the rat people were just using the structure, not necessarily worshippers of <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Kelemvor the God of Death.html">Kelemvor the God of Death</a></p><h2>Backlinks</h2>
@@ -76,8 +76,8 @@
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Feb 21, 2022 - Session 3.html">Feb 21, 2022 - Session 3</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A241830763572644281642296125984518854245{level}"></svg>
-    <button class="graph_button" id="B241830763572644281642296125984518854245{level}" level="{level}" onclick="run('241830763572644281642296125984518854245'+this.level, 'Rat People');">Show Graph</button>
+    <svg class="graph_svg" id="A256121771814690766392081038350531876277{level}"></svg>
+    <button class="graph_button" id="B256121771814690766392081038350531876277{level}" level="{level}" onclick="run('256121771814690766392081038350531876277'+this.level, 'Rat People');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -85,20 +85,17 @@
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A241830763572644281642296125984518854245{level}" class="graph_div"></div>
-    <button class="graph_button" id="B241830763572644281642296125984518854245{level}" level="{level}" onclick="run('241830763572644281642296125984518854245'+this.level, 'Rat People', 'None');">Show Graph</button>
+    <div id="A256121771814690766392081038350531876277{level}" class="graph_div"></div>
+    <button class="graph_button" id="B256121771814690766392081038350531876277{level}" level="{level}" onclick="run('256121771814690766392081038350531876277'+this.level, 'Rat People');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

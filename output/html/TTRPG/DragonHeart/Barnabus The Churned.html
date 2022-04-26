@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,10 +61,14 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Old Scar.html">The Old Scar</a> <br />
+                                        <p>location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Old Scar.html">The Old Scar</a> <br />
 race:: Bony Figure   </p>
 <h1 id="barnabus-the-churned">Barnabus The Churned</h1>
+<div class="toc">
+<ul>
+<li><a href="#barnabus-the-churned" class="anchor-link">Barnabus The Churned</a></li>
+</ul>
+</div>
 <p>had a blue staff that turned <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Green Staff.html">Green Staff</a> and now <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Jolo Brekk.html">Jolo Brekk</a> has.   </p>
 <p>we killed him in the laboratory at <a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Old Scar.html">The Old Scar</a></p><h2>Backlinks</h2>
 <ul>
@@ -75,8 +79,8 @@ race:: Bony Figure   </p>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 15, 2022 - Downtime Session 1.1.html">Jan 15, 2022 - Downtime Session 1.1</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A232111522938063860052369447542236279547{level}"></svg>
-    <button class="graph_button" id="B232111522938063860052369447542236279547{level}" level="{level}" onclick="run('232111522938063860052369447542236279547'+this.level, 'Barnabus The Churned');">Show Graph</button>
+    <svg class="graph_svg" id="A254953542067390606133695418469554143290{level}"></svg>
+    <button class="graph_button" id="B254953542067390606133695418469554143290{level}" level="{level}" onclick="run('254953542067390606133695418469554143290'+this.level, 'Barnabus The Churned');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -84,20 +88,17 @@ race:: Bony Figure   </p>
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A232111522938063860052369447542236279547{level}" class="graph_div"></div>
-    <button class="graph_button" id="B232111522938063860052369447542236279547{level}" level="{level}" onclick="run('232111522938063860052369447542236279547'+this.level, 'Barnabus The Churned', 'None');">Show Graph</button>
+    <div id="A254953542067390606133695418469554143290{level}" class="graph_div"></div>
+    <button class="graph_button" id="B254953542067390606133695418469554143290{level}" level="{level}" onclick="run('254953542067390606133695418469554143290'+this.level, 'Barnabus The Churned');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

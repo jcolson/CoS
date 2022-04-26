@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,10 +61,14 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-race:: faction <br />
+                                        <p>race:: faction <br />
 location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Hannat.html">Hannat</a>   </p>
 <h1 id="silver-claw">Silver Claw</h1>
+<div class="toc">
+<ul>
+<li><a href="#silver-claw" class="anchor-link">Silver Claw</a></li>
+</ul>
+</div>
 <p><a href="/DragonHearts/output/html/TTRPG/Tyranny-of-Dragons/Bahamut (God).html">Bahamut (God)</a> - radical group of believers - 20% draconic loot has to be tithed</p><h2>Backlinks</h2>
 <ul>
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
@@ -73,8 +77,8 @@ location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Hannat.html">Han
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 24, 2022 - Session 2.html">Jan 24, 2022 - Session 2</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A128026217737065973431546227283025909622{level}"></svg>
-    <button class="graph_button" id="B128026217737065973431546227283025909622{level}" level="{level}" onclick="run('128026217737065973431546227283025909622'+this.level, 'Silver Claw');">Show Graph</button>
+    <svg class="graph_svg" id="A221960582552568743031823787590272532766{level}"></svg>
+    <button class="graph_button" id="B221960582552568743031823787590272532766{level}" level="{level}" onclick="run('221960582552568743031823787590272532766'+this.level, 'Silver Claw');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -82,20 +86,17 @@ location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Hannat.html">Han
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A128026217737065973431546227283025909622{level}" class="graph_div"></div>
-    <button class="graph_button" id="B128026217737065973431546227283025909622{level}" level="{level}" onclick="run('128026217737065973431546227283025909622'+this.level, 'Silver Claw', 'None');">Show Graph</button>
+    <div id="A221960582552568743031823787590272532766{level}" class="graph_div"></div>
+    <button class="graph_button" id="B221960582552568743031823787590272532766{level}" level="{level}" onclick="run('221960582552568743031823787590272532766'+this.level, 'Silver Claw');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

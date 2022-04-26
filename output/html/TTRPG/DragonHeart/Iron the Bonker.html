@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,10 +61,14 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-race:: Dwarf <br />
+                                        <p>race:: Dwarf <br />
 location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Crying Pony.html">The Crying Pony</a>   </p>
 <h1 id="iron-the-bonker">Iron the Bonker</h1>
+<div class="toc">
+<ul>
+<li><a href="#iron-the-bonker" class="anchor-link">Iron the Bonker</a></li>
+</ul>
+</div>
 <p>contact for <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Vormorn.html">Vormorn</a></p><h2>Backlinks</h2>
 <ul>
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
@@ -74,8 +78,8 @@ location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Crying Pony.
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 24, 2022 - Session 2.html">Jan 24, 2022 - Session 2</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A226603837495035281788551739709362534694{level}"></svg>
-    <button class="graph_button" id="B226603837495035281788551739709362534694{level}" level="{level}" onclick="run('226603837495035281788551739709362534694'+this.level, 'Iron the Bonker');">Show Graph</button>
+    <svg class="graph_svg" id="A335768794571862419799314147239510128623{level}"></svg>
+    <button class="graph_button" id="B335768794571862419799314147239510128623{level}" level="{level}" onclick="run('335768794571862419799314147239510128623'+this.level, 'Iron the Bonker');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -83,20 +87,17 @@ location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Crying Pony.
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A226603837495035281788551739709362534694{level}" class="graph_div"></div>
-    <button class="graph_button" id="B226603837495035281788551739709362534694{level}" level="{level}" onclick="run('226603837495035281788551739709362534694'+this.level, 'Iron the Bonker', 'None');">Show Graph</button>
+    <div id="A335768794571862419799314147239510128623{level}" class="graph_div"></div>
+    <button class="graph_button" id="B335768794571862419799314147239510128623{level}" level="{level}" onclick="run('335768794571862419799314147239510128623'+this.level, 'Iron the Bonker');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

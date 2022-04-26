@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,9 +61,13 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-location:: Turmish, Faerûn   </p>
+                                        <p>location:: Turmish, Faerûn   </p>
 <h1 id="hannat">Hannat</h1>
+<div class="toc">
+<ul>
+<li><a href="#hannat" class="anchor-link">Hannat</a></li>
+</ul>
+</div>
 <p>South side of Orsraun Mountains   </p>
 <p>first establishment in mountains   <br />
 east of the swamp   </p>
@@ -81,8 +85,8 @@ east of the swamp   </p>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Feb 24, 2022 - Downtime session 3.1.html">Feb 24, 2022 - Downtime session 3.1</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A198565919899411931622331418548900782036{level}"></svg>
-    <button class="graph_button" id="B198565919899411931622331418548900782036{level}" level="{level}" onclick="run('198565919899411931622331418548900782036'+this.level, 'Hannat');">Show Graph</button>
+    <svg class="graph_svg" id="A273838922012145839470711939779283819173{level}"></svg>
+    <button class="graph_button" id="B273838922012145839470711939779283819173{level}" level="{level}" onclick="run('273838922012145839470711939779283819173'+this.level, 'Hannat');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -90,20 +94,17 @@ east of the swamp   </p>
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A198565919899411931622331418548900782036{level}" class="graph_div"></div>
-    <button class="graph_button" id="B198565919899411931622331418548900782036{level}" level="{level}" onclick="run('198565919899411931622331418548900782036'+this.level, 'Hannat', 'None');">Show Graph</button>
+    <div id="A273838922012145839470711939779283819173{level}" class="graph_div"></div>
+    <button class="graph_button" id="B273838922012145839470711939779283819173{level}" level="{level}" onclick="run('273838922012145839470711939779283819173'+this.level, 'Hannat');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

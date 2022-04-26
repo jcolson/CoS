@@ -39,8 +39,8 @@ html_url_prefix: '/DragonHearts/output/html'
 html_template_path_str: ''
 
 # Provide an array of custom inclusions (css, javascript, etc) that you would like to be included in the resultant html
-html_custom_inclusions:
-  - '<link rel="stylesheet" href="/DragonHearts/assets/custom.css" />'
+# html_custom_inclusions:
+  # - '<link rel="stylesheet" href="/DragonHearts/assets/custom.css" />'
   # - '<link rel="stylesheet" href="/assets/custom.css" />'
 
 # Exclude subfolders

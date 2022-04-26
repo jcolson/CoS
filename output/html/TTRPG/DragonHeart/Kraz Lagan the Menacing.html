@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,17 +61,21 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-faction:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Crimson Dawn.html">Crimson Dawn</a>   </p>
+                                        <p>faction:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Crimson Dawn.html">Crimson Dawn</a>   </p>
 <h1 id="kraz-lagan-the-menacing">Kraz Lagan the Menacing</h1>
+<div class="toc">
+<ul>
+<li><a href="#kraz-lagan-the-menacing" class="anchor-link">Kraz Lagan the Menacing</a></li>
+</ul>
+</div>
 <p>leader of <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Crimson Dawn.html">Crimson Dawn</a>?</p><h2>Backlinks</h2>
 <ul>
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 12, 2022 - Session 1.html">Jan 12, 2022 - Session 1</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A151202965738196968857031536730012212258{level}"></svg>
-    <button class="graph_button" id="B151202965738196968857031536730012212258{level}" level="{level}" onclick="run('151202965738196968857031536730012212258'+this.level, 'Kraz Lagan the Menacing');">Show Graph</button>
+    <svg class="graph_svg" id="A167145364716674192192575347339725346154{level}"></svg>
+    <button class="graph_button" id="B167145364716674192192575347339725346154{level}" level="{level}" onclick="run('167145364716674192192575347339725346154'+this.level, 'Kraz Lagan the Menacing');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -79,20 +83,17 @@ faction:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Crimson Dawn.html
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A151202965738196968857031536730012212258{level}" class="graph_div"></div>
-    <button class="graph_button" id="B151202965738196968857031536730012212258{level}" level="{level}" onclick="run('151202965738196968857031536730012212258'+this.level, 'Kraz Lagan the Menacing', 'None');">Show Graph</button>
+    <div id="A167145364716674192192575347339725346154{level}" class="graph_div"></div>
+    <button class="graph_button" id="B167145364716674192192575347339725346154{level}" level="{level}" onclick="run('167145364716674192192575347339725346154'+this.level, 'Kraz Lagan the Menacing');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

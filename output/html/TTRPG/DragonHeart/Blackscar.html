@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,18 +61,22 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-race:: Dragonborn <br />
+                                        <p>race:: Dragonborn <br />
 faction:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Lion's Pride.html">Lion's Pride</a>   </p>
 <h1 id="blackscar">Blackscar</h1>
+<div class="toc">
+<ul>
+<li><a href="#blackscar" class="anchor-link">Blackscar</a></li>
+</ul>
+</div>
 <p>He looks nobleborn, but has a quite menacing aura.</p><h2>Backlinks</h2>
 <ul>
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 15, 2022 - Downtime Session 1.1.html">Jan 15, 2022 - Downtime Session 1.1</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A200575363168309686751251180287753545297{level}"></svg>
-    <button class="graph_button" id="B200575363168309686751251180287753545297{level}" level="{level}" onclick="run('200575363168309686751251180287753545297'+this.level, 'Blackscar');">Show Graph</button>
+    <svg class="graph_svg" id="A18482260524259630230127106292609192312{level}"></svg>
+    <button class="graph_button" id="B18482260524259630230127106292609192312{level}" level="{level}" onclick="run('18482260524259630230127106292609192312'+this.level, 'Blackscar');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -80,20 +84,17 @@ faction:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Lion's Pride.html
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A200575363168309686751251180287753545297{level}" class="graph_div"></div>
-    <button class="graph_button" id="B200575363168309686751251180287753545297{level}" level="{level}" onclick="run('200575363168309686751251180287753545297'+this.level, 'Blackscar', 'None');">Show Graph</button>
+    <div id="A18482260524259630230127106292609192312{level}" class="graph_div"></div>
+    <button class="graph_button" id="B18482260524259630230127106292609192312{level}" level="{level}" onclick="run('18482260524259630230127106292609192312'+this.level, 'Blackscar');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

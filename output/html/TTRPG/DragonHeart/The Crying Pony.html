@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,12 +61,12 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="the-crying-pony">The Crying Pony</h1>
+<div class="toc">
 <ul>
 <li><a href="#the-crying-pony" class="anchor-link">The Crying Pony</a></li>
 </ul>
-</div>
-<h1 id="the-crying-pony">The Crying Pony</h1><h2>Backlinks</h2>
+</div><h2>Backlinks</h2>
 <ul>
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 12, 2022 - Session 1.html">Jan 12, 2022 - Session 1</a></li>
@@ -76,8 +76,8 @@
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 24, 2022 - Session 2.html">Jan 24, 2022 - Session 2</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A254726748532522565150891939487419419548{level}"></svg>
-    <button class="graph_button" id="B254726748532522565150891939487419419548{level}" level="{level}" onclick="run('254726748532522565150891939487419419548'+this.level, 'The Crying Pony');">Show Graph</button>
+    <svg class="graph_svg" id="A35514092216604934889961908892392839356{level}"></svg>
+    <button class="graph_button" id="B35514092216604934889961908892392839356{level}" level="{level}" onclick="run('35514092216604934889961908892392839356'+this.level, 'The Crying Pony');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -85,20 +85,17 @@
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A254726748532522565150891939487419419548{level}" class="graph_div"></div>
-    <button class="graph_button" id="B254726748532522565150891939487419419548{level}" level="{level}" onclick="run('254726748532522565150891939487419419548'+this.level, 'The Crying Pony', 'None');">Show Graph</button>
+    <div id="A35514092216604934889961908892392839356{level}" class="graph_div"></div>
+    <button class="graph_button" id="B35514092216604934889961908892392839356{level}" level="{level}" onclick="run('35514092216604934889961908892392839356'+this.level, 'The Crying Pony');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

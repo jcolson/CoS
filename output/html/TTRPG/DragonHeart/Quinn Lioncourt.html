@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,13 +61,17 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-player:: <a href="/DragonHearts/output/html/not_created.html" class="nonexistent-link">Glenn Tarpey</a> <br />
+                                        <p>player:: <a href="/DragonHearts/output/html/not_created.html" class="nonexistent-link">Glenn Tarpey</a> <br />
 class:: Ranger <br />
 race:: Half-Elf <br />
 faction:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Circle.html">The Circle</a> <br />
 background:: Outlander   </p>
 <h1 id="quinn-lioncourt">Quinn Lioncourt</h1>
+<div class="toc">
+<ul>
+<li><a href="#quinn-lioncourt" class="anchor-link">Quinn Lioncourt</a></li>
+</ul>
+</div>
 <p>the eagle-eyed strider   </p>
 <p>hands looks burnt - battlehardened - rarely smiles   </p>
 <p>lost his wife to <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Silver Claw.html">Silver Claw</a> fanaticism   </p>
@@ -85,8 +89,8 @@ background:: Outlander   </p>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Apr 7, 2022 - Session 4.html">Apr 7, 2022 - Session 4</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A187668567432390693305645544629123923157{level}"></svg>
-    <button class="graph_button" id="B187668567432390693305645544629123923157{level}" level="{level}" onclick="run('187668567432390693305645544629123923157'+this.level, 'Quinn Lioncourt');">Show Graph</button>
+    <svg class="graph_svg" id="A230097835360864915844936078021385391125{level}"></svg>
+    <button class="graph_button" id="B230097835360864915844936078021385391125{level}" level="{level}" onclick="run('230097835360864915844936078021385391125'+this.level, 'Quinn Lioncourt');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -94,20 +98,17 @@ background:: Outlander   </p>
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A187668567432390693305645544629123923157{level}" class="graph_div"></div>
-    <button class="graph_button" id="B187668567432390693305645544629123923157{level}" level="{level}" onclick="run('187668567432390693305645544629123923157'+this.level, 'Quinn Lioncourt', 'None');">Show Graph</button>
+    <div id="A230097835360864915844936078021385391125{level}" class="graph_div"></div>
+    <button class="graph_button" id="B230097835360864915844936078021385391125{level}" level="{level}" onclick="run('230097835360864915844936078021385391125'+this.level, 'Quinn Lioncourt');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

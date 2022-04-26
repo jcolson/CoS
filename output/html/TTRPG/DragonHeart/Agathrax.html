@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,17 +61,21 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-race:: Dragon   </p>
+                                        <p>race:: Dragon   </p>
 <h1 id="agathrax">Agathrax</h1>
+<div class="toc">
+<ul>
+<li><a href="#agathrax" class="anchor-link">Agathrax</a></li>
+</ul>
+</div>
 <p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Forger.html">The Forger</a> has asked <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Vormorn.html">Vormorn</a> to kill all dragons, and to find this one and kill it as well.</p><h2>Backlinks</h2>
 <ul>
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 15, 2022 - Downtime Session 1.1.html">Jan 15, 2022 - Downtime Session 1.1</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A31146412732077410402872883557853326801{level}"></svg>
-    <button class="graph_button" id="B31146412732077410402872883557853326801{level}" level="{level}" onclick="run('31146412732077410402872883557853326801'+this.level, 'Agathrax');">Show Graph</button>
+    <svg class="graph_svg" id="A25753286565032327372416553703131349032{level}"></svg>
+    <button class="graph_button" id="B25753286565032327372416553703131349032{level}" level="{level}" onclick="run('25753286565032327372416553703131349032'+this.level, 'Agathrax');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -79,20 +83,17 @@ race:: Dragon   </p>
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A31146412732077410402872883557853326801{level}" class="graph_div"></div>
-    <button class="graph_button" id="B31146412732077410402872883557853326801{level}" level="{level}" onclick="run('31146412732077410402872883557853326801'+this.level, 'Agathrax', 'None');">Show Graph</button>
+    <div id="A25753286565032327372416553703131349032{level}" class="graph_div"></div>
+    <button class="graph_button" id="B25753286565032327372416553703131349032{level}" level="{level}" onclick="run('25753286565032327372416553703131349032'+this.level, 'Agathrax');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

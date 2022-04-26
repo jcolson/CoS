@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,7 +61,8 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="dec-15-2021-session-0">Dec 15, 2021 - Session 0</h1>
+<div class="toc">
 <ul>
 <li><a href="#dec-15-2021-session-0" class="anchor-link">Dec 15, 2021 - Session 0</a><ul>
 <li><a href="#session-0-stuff" class="anchor-link">Session 0 Stuff</a></li>
@@ -73,7 +74,6 @@
 </li>
 </ul>
 </div>
-<h1 id="dec-15-2021-session-0">Dec 15, 2021 - Session 0</h1>
 <h2 id="session-0-stuff">Session 0 Stuff</h2>
 <p>Feb 22, 2022 <a href="https://doodle.com/poll/kdk26my2i5xx2pba" target="_blank" class="external-link" target="_blank" class="external-link">Doodle</a> <br />
 Dec 15, 2021 <a href="https://doodle.com/poll/kdk26my2i5xx2pba" target="_blank" class="external-link" target="_blank" class="external-link">Doodle</a> link for figuring out schedules   </p>
@@ -122,8 +122,8 @@ General coin is silver <br />
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A73195705196029002218007731178319309442{level}"></svg>
-    <button class="graph_button" id="B73195705196029002218007731178319309442{level}" level="{level}" onclick="run('73195705196029002218007731178319309442'+this.level, 'Dec 15, 2021 - Session 0');">Show Graph</button>
+    <svg class="graph_svg" id="A95775866429227574532359922372229683770{level}"></svg>
+    <button class="graph_button" id="B95775866429227574532359922372229683770{level}" level="{level}" onclick="run('95775866429227574532359922372229683770'+this.level, 'Dec 15, 2021 - Session 0');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -131,20 +131,17 @@ General coin is silver <br />
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A73195705196029002218007731178319309442{level}" class="graph_div"></div>
-    <button class="graph_button" id="B73195705196029002218007731178319309442{level}" level="{level}" onclick="run('73195705196029002218007731178319309442'+this.level, 'Dec 15, 2021 - Session 0', 'None');">Show Graph</button>
+    <div id="A95775866429227574532359922372229683770{level}" class="graph_div"></div>
+    <button class="graph_button" id="B95775866429227574532359922372229683770{level}" level="{level}" onclick="run('95775866429227574532359922372229683770'+this.level, 'Dec 15, 2021 - Session 0');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

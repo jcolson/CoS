@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,12 +61,12 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="jan-24-2022-session-2">Jan 24, 2022 - Session 2</h1>
+<div class="toc">
 <ul>
 <li><a href="#jan-24-2022-session-2" class="anchor-link">Jan 24, 2022 - Session 2</a></li>
 </ul>
 </div>
-<h1 id="jan-24-2022-session-2">Jan 24, 2022 - Session 2</h1>
 <p>back at <a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Crying Pony.html">The Crying Pony</a>   </p>
 <p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Rothorn.html">Rothorn</a> give us info on posse we could jump <br />
 what is going on in the mountains?   </p>
@@ -156,8 +156,8 @@ sun is settling - there is some lights in distance.   </p>
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A147969501374221999326950245701042424440{level}"></svg>
-    <button class="graph_button" id="B147969501374221999326950245701042424440{level}" level="{level}" onclick="run('147969501374221999326950245701042424440'+this.level, 'Jan 24, 2022 - Session 2');">Show Graph</button>
+    <svg class="graph_svg" id="A91432767635999333123239396908039100584{level}"></svg>
+    <button class="graph_button" id="B91432767635999333123239396908039100584{level}" level="{level}" onclick="run('91432767635999333123239396908039100584'+this.level, 'Jan 24, 2022 - Session 2');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -165,20 +165,17 @@ sun is settling - there is some lights in distance.   </p>
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A147969501374221999326950245701042424440{level}" class="graph_div"></div>
-    <button class="graph_button" id="B147969501374221999326950245701042424440{level}" level="{level}" onclick="run('147969501374221999326950245701042424440'+this.level, 'Jan 24, 2022 - Session 2', 'None');">Show Graph</button>
+    <div id="A91432767635999333123239396908039100584{level}" class="graph_div"></div>
+    <button class="graph_button" id="B91432767635999333123239396908039100584{level}" level="{level}" onclick="run('91432767635999333123239396908039100584'+this.level, 'Jan 24, 2022 - Session 2');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

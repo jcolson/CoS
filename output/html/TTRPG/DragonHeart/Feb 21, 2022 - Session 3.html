@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,12 +61,12 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="feb-21-2022-session-3">Feb 21, 2022 - Session 3</h1>
+<div class="toc">
 <ul>
 <li><a href="#feb-21-2022-session-3" class="anchor-link">Feb 21, 2022 - Session 3</a></li>
 </ul>
 </div>
-<h1 id="feb-21-2022-session-3">Feb 21, 2022 - Session 3</h1>
 <p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Devil's Cove.html">Devil's Cove</a> looks a little fake --- all built with wood   </p>
 <p>+2 inspiration points for talking about quest of <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Sigmund.html">Sigmund</a>   </p>
 <p><a href="/DragonHearts/output/html/TTRPG/DragonHeart/The Circle.html">The Circle</a> gave a quest --- <a href="/DragonHearts/output/html/TTRPG/DragonHeart/DH DM.html">DH DM</a> to remind us?   </p>
@@ -147,8 +147,8 @@ griffin hound, he's coming with us, now <a href="/DragonHearts/output/html/TTRPG
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A186776735144440218262283207201712281704{level}"></svg>
-    <button class="graph_button" id="B186776735144440218262283207201712281704{level}" level="{level}" onclick="run('186776735144440218262283207201712281704'+this.level, 'Feb 21, 2022 - Session 3');">Show Graph</button>
+    <svg class="graph_svg" id="A10869586721543260872123161070160416776{level}"></svg>
+    <button class="graph_button" id="B10869586721543260872123161070160416776{level}" level="{level}" onclick="run('10869586721543260872123161070160416776'+this.level, 'Feb 21, 2022 - Session 3');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -156,20 +156,17 @@ griffin hound, he's coming with us, now <a href="/DragonHearts/output/html/TTRPG
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A186776735144440218262283207201712281704{level}" class="graph_div"></div>
-    <button class="graph_button" id="B186776735144440218262283207201712281704{level}" level="{level}" onclick="run('186776735144440218262283207201712281704'+this.level, 'Feb 21, 2022 - Session 3', 'None');">Show Graph</button>
+    <div id="A10869586721543260872123161070160416776{level}" class="graph_div"></div>
+    <button class="graph_button" id="B10869586721543260872123161070160416776{level}" level="{level}" onclick="run('10869586721543260872123161070160416776'+this.level, 'Feb 21, 2022 - Session 3');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

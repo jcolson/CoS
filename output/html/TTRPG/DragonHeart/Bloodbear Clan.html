@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,10 +61,14 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-race:: faction <br />
+                                        <p>race:: faction <br />
 location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Hannat.html">Hannat</a>   </p>
 <h1 id="bloodbear-clan">Bloodbear Clan</h1>
+<div class="toc">
+<ul>
+<li><a href="#bloodbear-clan" class="anchor-link">Bloodbear Clan</a></li>
+</ul>
+</div>
 <p>mountain dwarf , no percentage, will provide weapons/armor and shamanic scrolls - have to let them know about dragon kills, so they can process dragon</p><h2>Backlinks</h2>
 <ul>
 	<li><a class="backlink" href="/DragonHearts/output/html/index.html">index</a></li>
@@ -75,8 +79,8 @@ location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Hannat.html">Han
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 24, 2022 - Session 2.html">Jan 24, 2022 - Session 2</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A118291716189644034259356071009071814816{level}"></svg>
-    <button class="graph_button" id="B118291716189644034259356071009071814816{level}" level="{level}" onclick="run('118291716189644034259356071009071814816'+this.level, 'Bloodbear Clan');">Show Graph</button>
+    <svg class="graph_svg" id="A82776609062590790053965713333665319208{level}"></svg>
+    <button class="graph_button" id="B82776609062590790053965713333665319208{level}" level="{level}" onclick="run('82776609062590790053965713333665319208'+this.level, 'Bloodbear Clan');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -84,20 +88,17 @@ location:: <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Hannat.html">Han
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A118291716189644034259356071009071814816{level}" class="graph_div"></div>
-    <button class="graph_button" id="B118291716189644034259356071009071814816{level}" level="{level}" onclick="run('118291716189644034259356071009071814816'+this.level, 'Bloodbear Clan', 'None');">Show Graph</button>
+    <div id="A82776609062590790053965713333665319208{level}" class="graph_div"></div>
+    <button class="graph_button" id="B82776609062590790053965713333665319208{level}" level="{level}" onclick="run('82776609062590790053965713333665319208'+this.level, 'Bloodbear Clan');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

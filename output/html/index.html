@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,7 +61,8 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="dragon-hearts">Dragon Hearts</h1>
+<div class="toc">
 <ul>
 <li><a href="#dragon-hearts" class="anchor-link">Dragon Hearts</a><ul>
 <li><a href="#snack-master" class="anchor-link">snack-master</a></li>
@@ -74,7 +75,6 @@
 </li>
 </ul>
 </div>
-<h1 id="dragon-hearts">Dragon Hearts</h1>
 <h2 id="snack-master">snack-master</h2>
 <ul>
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Snack Master.html">Snack Master</a>   </li>
@@ -136,8 +136,8 @@
 <li><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Unknown Ring.html">Unknown Ring</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A280166202626851751348334944129306226476{level}"></svg>
-    <button class="graph_button" id="B280166202626851751348334944129306226476{level}" level="{level}" onclick="run('280166202626851751348334944129306226476'+this.level, 'index');">Show Graph</button>
+    <svg class="graph_svg" id="A150200161181747441083016111351785999868{level}"></svg>
+    <button class="graph_button" id="B150200161181747441083016111351785999868{level}" level="{level}" onclick="run('150200161181747441083016111351785999868'+this.level, 'index');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -145,20 +145,17 @@
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A280166202626851751348334944129306226476{level}" class="graph_div"></div>
-    <button class="graph_button" id="B280166202626851751348334944129306226476{level}" level="{level}" onclick="run('280166202626851751348334944129306226476'+this.level, 'index', 'None');">Show Graph</button>
+    <div id="A150200161181747441083016111351785999868{level}" class="graph_div"></div>
+    <button class="graph_button" id="B150200161181747441083016111351785999868{level}" level="{level}" onclick="run('150200161181747441083016111351785999868'+this.level, 'index');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

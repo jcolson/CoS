@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,10 +61,17 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-race:: Dwarf <br />
+                                        <p>race:: Dwarf <br />
 class:: Greater Diety   </p>
 <h1 id="moradin">Moradin</h1>
+<div class="toc">
+<ul>
+<li><a href="#moradin" class="anchor-link">Moradin</a><ul>
+<li><a href="#titles" class="anchor-link">Titles</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>(pronounced: <em>MOR-a-din</em><a href="https://forgottenrealms.fandom.com/wiki/Moradin#cite_note-D93-APG-p28-29" target="_blank" class="external-link">29</a> or: <em>MOR-uh-din</em><a href="https://forgottenrealms.fandom.com/wiki/Moradin#cite_note-FaP-p121-8" target="_blank" class="external-link">8</a>) was the <a href="https://forgottenrealms.fandom.com/wiki/Lawful_good" target="_blank" class="external-link" title="Lawful good">lawful good</a> god of the <a href="https://forgottenrealms.fandom.com/wiki/Dwarves" target="_blank" class="external-link" title="Dwarves">dwarves</a> and the chief deity in <a href="https://forgottenrealms.fandom.com/wiki/Dwarven_pantheon" target="_blank" class="external-link" title="Dwarven pantheon">their pantheon</a>. A harsh but fair judge, he was strength and force of will embodied. He inspired dwarven inventions and constantly sought to improve their race, encouraging a good natured, intelligent, and harmonious existence with other good races while battling their pride and isolationist tendencies.   </p>
 <h2 id="titles">Titles</h2>
 <p>All-Father<a href="https://forgottenrealms.fandom.com/wiki/Moradin#cite_note-SCAG5e-p22.2C104-1" target="_blank" class="external-link">1</a>   <br />
@@ -76,8 +83,8 @@ The Creator</p><h2>Backlinks</h2>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/The Forger.html">The Forger</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A178001786798405463382511394104506170684{level}"></svg>
-    <button class="graph_button" id="B178001786798405463382511394104506170684{level}" level="{level}" onclick="run('178001786798405463382511394104506170684'+this.level, 'Moradin');">Show Graph</button>
+    <svg class="graph_svg" id="A110942360692830436083872822473850822516{level}"></svg>
+    <button class="graph_button" id="B110942360692830436083872822473850822516{level}" level="{level}" onclick="run('110942360692830436083872822473850822516'+this.level, 'Moradin');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -85,20 +92,17 @@ The Creator</p><h2>Backlinks</h2>
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A178001786798405463382511394104506170684{level}" class="graph_div"></div>
-    <button class="graph_button" id="B178001786798405463382511394104506170684{level}" level="{level}" onclick="run('178001786798405463382511394104506170684'+this.level, 'Moradin', 'None');">Show Graph</button>
+    <div id="A110942360692830436083872822473850822516{level}" class="graph_div"></div>
+    <button class="graph_button" id="B110942360692830436083872822473850822516{level}" level="{level}" onclick="run('110942360692830436083872822473850822516'+this.level, 'Moradin');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

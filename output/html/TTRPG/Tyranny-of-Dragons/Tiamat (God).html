@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,22 +61,22 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <div class="toc">
+                                        <h1 id="tiamat-god">Tiamat (God)</h1>
+<div class="toc">
 <ul>
 <li><a href="#tiamat-god" class="anchor-link">Tiamat (God)</a></li>
 </ul>
 </div>
-<h1 id="tiamat-god">Tiamat (God)</h1>
 <p>The evil queen of dragons is a fearsome god of greed, envy, and hoarded wealth. While chromatic dragons are her foremost worshipers, Tiamat accepts the worship of any who crave wealth. All chromatic dragons have a fearful reverence for their tyrannical queen, but many dragons of near-deific power and ambition chafe under her rule.   </p>
 <p>Tiamat remains imprisoned in Avernus, the first of the Nine Hells, influencing the souls of chromatic dragons across the planes and seeking the means to free herself.   </p>
 <p><strong><em>Depiction.</em></strong> Most representations of Tiamat exist as warnings within sanctuaries of the Platinum Dragon Bahamut. She is shown as a drake of frightful size, with massive leathery wings spreading clouds of poisonous mist, while she shouts from five vicious dragon heads, each one a chromatic color of her evil children.   </p>
 <p><strong><em>Enemies.</em></strong> The Scaled Tyrant’s hatred for <a href="/DragonHearts/output/html/TTRPG/Tyranny-of-Dragons/Bahamut (God).html">Bahamut (God)</a> is as old as the Founding, and her cults are ever hunted by his justice. For centuries, the zealous paladins of Bahamut have limited her worship to the chromatic dragons, but a rise in cult activity in the underbelly of Dwendalian society has priests of the Platinum Dragon on edge.</p><h2>Backlinks</h2>
 <ul>
-	<li><a class="backlink" href="/TTRPG/Tyranny-of-Dragons/Bahamut (God).html">Bahamut (God)</a></li>
+	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/Tyranny-of-Dragons/Bahamut (God).html">Bahamut (God)</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A97107175804926291192718283582347423488{level}"></svg>
-    <button class="graph_button" id="B97107175804926291192718283582347423488{level}" level="{level}" onclick="run('97107175804926291192718283582347423488'+this.level, 'Tiamat (God)');">Show Graph</button>
+    <svg class="graph_svg" id="A237950488584685219644929267840136068448{level}"></svg>
+    <button class="graph_button" id="B237950488584685219644929267840136068448{level}" level="{level}" onclick="run('237950488584685219644929267840136068448'+this.level, 'Tiamat (God)');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -84,20 +84,17 @@
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A97107175804926291192718283582347423488{level}" class="graph_div"></div>
-    <button class="graph_button" id="B97107175804926291192718283582347423488{level}" level="{level}" onclick="run('97107175804926291192718283582347423488'+this.level, 'Tiamat (God)', '45');">Show Graph</button>
+    <div id="A237950488584685219644929267840136068448{level}" class="graph_div"></div>
+    <button class="graph_button" id="B237950488584685219644929267840136068448{level}" level="{level}" onclick="run('237950488584685219644929267840136068448'+this.level, 'Tiamat (God)');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

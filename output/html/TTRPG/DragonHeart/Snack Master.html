@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -127,19 +127,16 @@ if not, another option: <a href="https://deliveroo.ie/menu/dublin/city-hall/biso
 
 <div class="graph">
     <div id="A299662959302340798817881957519855816222{level}" class="graph_div"></div>
-    <button class="graph_button" id="B299662959302340798817881957519855816222{level}" level="{level}" onclick="run('299662959302340798817881957519855816222'+this.level, 'Snack Master', 'None');">Show Graph</button>
+    <button class="graph_button" id="B299662959302340798817881957519855816222{level}" level="{level}" onclick="run('299662959302340798817881957519855816222'+this.level, 'Snack Master');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')

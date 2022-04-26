@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/mermaid.css" />
                 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/main.css" />
                 <script src="/DragonHearts/output/html/obs.html/static/mermaid.min.js"></script> 
-                <link rel="stylesheet" href="/DragonHearts/assets/custom.css" />
+                
 <link rel="stylesheet" href="/DragonHearts/output/html/obs.html/static/graph.css" />
 <script src="/DragonHearts/output/html/obs.html/static/dirtree.js" /></script>
 
@@ -61,11 +61,19 @@
                 <div class="flex_row">
                         <div id="left_pane"></div>
                         <div class="container">
-                                        <p>[TOC]
-location::  <br />
+                                        <p>location::  <br />
 race:: from <a href="/DragonHearts/output/html/TTRPG/DragonHeart/Moradin.html">Moradin</a> <br />
 class:: Diety   </p>
 <h1 id="the-forger">The Forger</h1>
+<div class="toc">
+<ul>
+<li><a href="#the-forger" class="anchor-link">The Forger</a><ul>
+<li><a href="#vormorns-contract-with-the-forger" class="anchor-link">Vormorn's contract with The Forger</a></li>
+<li><a href="#about" class="anchor-link">About</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <h2 id="vormorns-contract-with-the-forger"><a href="/DragonHearts/output/html/TTRPG/DragonHeart/Vormorn.html">Vormorn</a>'s contract with The Forger</h2>
 <hr />
 <p><strong>Offers:</strong> <br />
@@ -89,8 +97,8 @@ Power   </p>
 	<li><a class="backlink" href="/DragonHearts/output/html/TTRPG/DragonHeart/Jan 15, 2022 - Downtime Session 1.1.html">Jan 15, 2022 - Downtime Session 1.1</a></li>
 </ul>
 <!-- <div class="graph">
-    <svg class="graph_svg" id="A100273527649317811843581551602667293076{level}"></svg>
-    <button class="graph_button" id="B100273527649317811843581551602667293076{level}" level="{level}" onclick="run('100273527649317811843581551602667293076'+this.level, 'The Forger');">Show Graph</button>
+    <svg class="graph_svg" id="A309193202552132192344971507386930517924{level}"></svg>
+    <button class="graph_button" id="B309193202552132192344971507386930517924{level}" level="{level}" onclick="run('309193202552132192344971507386930517924'+this.level, 'The Forger');">Show Graph</button>
 </div>
 <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
@@ -98,20 +106,17 @@ Power   </p>
  <script src="/DragonHearts/output/html/obs.html/static/graph.js" type="text/javascript"></script>
 
 <div class="graph">
-    <div id="A100273527649317811843581551602667293076{level}" class="graph_div"></div>
-    <button class="graph_button" id="B100273527649317811843581551602667293076{level}" level="{level}" onclick="run('100273527649317811843581551602667293076'+this.level, 'The Forger', 'None');">Show Graph</button>
+    <div id="A309193202552132192344971507386930517924{level}" class="graph_div"></div>
+    <button class="graph_button" id="B309193202552132192344971507386930517924{level}" level="{level}" onclick="run('309193202552132192344971507386930517924'+this.level, 'The Forger');">Show Graph</button>
 </div>
 
 
 <script src="//unpkg.com/3d-force-graph"></script>
 <script>
     function grapher(args) {
-        current_node_id = args.current_node_id
-        
-        let it = 0;
         window.Graph = ForceGraph3D()
             (args.graph_container)
-            .jsonUrl('/obs.html/data/graph.json')
+            .jsonUrl(args.data)
             .width(args.width)
             .height(args.height)
             .nodeLabel('id')
