@@ -31,8 +31,8 @@ site_name: 'Curse of Strahd'
 
 # Use when deploying to https://mydomain.com/html_prefix/ instead of https://mydomain.com/
 # use '/html_prefix' (prepend slash, no slash at the end)
-#html_url_prefix: '/CoS/output/html'
-html_url_prefix: '/output/html'
+html_url_prefix: '/CoS/output/html'
+#html_url_prefix: '/output/html'
 
 # Provide the fullpath to a template file to use instead of standard template. 
 # Note that this file must contain at least "{content}" somewhere in the page.
