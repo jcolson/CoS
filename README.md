@@ -1,4 +1,6 @@
-# www.karma.net/DragonHearts
+# www.karma.net/CoS
+
+this is the website for our Curse of Strahd campaign
 
 ## to run Jekyll locally
 
