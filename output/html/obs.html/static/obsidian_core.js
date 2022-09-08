@@ -11,7 +11,7 @@ var CONFIGURED_HTML_URL_PREFIX = "/CoS/output/html";
 var RELATIVE_PATHS = 0;
 var documentation_mode = 1;
 var tab_mode = !no_tab_mode;
-var gzip_hash = '269947582454588334049873116179242585876'                       // used to check whether the localStorage data is stale
+var gzip_hash = '82266745330128245158430901925435073916'                       // used to check whether the localStorage data is stale
 
 
 // Onloads
