@@ -25,5 +25,4 @@ you don't normally need to rm anything, as obsidianhtml does that for you, but I
 
 ### run jekyll
 
-bundle exec jekyll serve --trace --drafts
-
+```bundle exec jekyll serve --trace --drafts```
