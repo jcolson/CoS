@@ -5,21 +5,23 @@ this is the website for our Curse of Strahd campaign
 ## to run Jekyll locally
 
 sudo gem install bundler
-sudo gem install jekyll\
+sudo gem install jekyll
 
-cp Gemfile from other site
+cp Gemfile from other site that uses github pages already
 
 bundle install
 
-## to import data from obsidian
+## to install obsidianhtml from source
 
-goto the obsidian-html source dir - git pull and then install via pip3 (this installs the latest from github)
+goto the obsidian-html source dir (src/opensource/obsidian-html) - git pull and then install via pip3 (this installs the latest from github)
 
 `pip3 install .`
 
 ### run the converter
 
-rm -Rf output; rm -Rf _site; obsidianhtml convert -v -i config.yml
+you don't normally need to rm anything, as obsidianhtml does that for you, but I'm doing this because I'm using "non release" binaries at times ...
+
+```rm -Rf output; rm -Rf _site; obsidianhtml convert -v```
 
 ### run jekyll
 

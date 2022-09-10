@@ -1,18 +1,18 @@
 // DYNAMIC
 ///////////////////////////////////////////////////////////////////////////////
-import * as grapher_3d from './graphers/3d.js';
 import * as grapher_2d from './graphers/2d.js';
+import * as grapher_3d from './graphers/3d.js';
 
 const CONFIGURED_HTML_URL_PREFIX = '/CoS/output/html';
 const URL_MODE = "absolute";
 
 var graphers = [
-	{'id': '3d', 'name': '3d', 'module': grapher_3d},
-	{'id': '2d', 'name': '2d', 'module': grapher_2d}
+	{'id': '2d', 'name': '2d', 'module': grapher_2d},
+	{'id': '3d', 'name': '3d', 'module': grapher_3d}
 ]
 var graphers_hash = {
-	'3d': {'id': '3d', 'name': '3d', 'module': grapher_3d},
-	'2d': {'id': '2d', 'name': '2d', 'module': grapher_2d}
+	'2d': {'id': '2d', 'name': '2d', 'module': grapher_2d},
+	'3d': {'id': '3d', 'name': '3d', 'module': grapher_3d}
 }
 // // DYNAMIC
 // ///////////////////////////////////////////////////////////////////////////////
